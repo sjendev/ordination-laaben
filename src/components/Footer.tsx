@@ -19,8 +19,8 @@ export default function Footer() {
                             />
                         </Link>
                         <p className="text-sm text-slate-500 font-light">
-                            Internistische & Kardiologische Facharztordination<br />
-                            Dr. Sang
+                            {t.footer.description}<br />
+                            Dr. Stephanie Sang
                         </p>
                     </div>
                     <div className="space-y-4">
@@ -41,10 +41,10 @@ export default function Footer() {
 
                 <div className="flex flex-col items-center gap-6">
                     <div className="flex gap-8 text-[10px] uppercase tracking-widest text-slate-400">
-                        <Link href="/imprint" className="hover:text-primary transition-colors">
+                        <Link href="/impressum" className="hover:text-primary transition-colors">
                             {t.footer.imprint}
                         </Link>
-                        <Link href="/privacy" className="hover:text-primary transition-colors">
+                        <Link href="/datenschutz" className="hover:text-primary transition-colors">
                             {t.footer.privacy}
                         </Link>
                     </div>

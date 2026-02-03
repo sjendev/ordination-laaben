@@ -7,35 +7,37 @@ export const translations = {
             wahlarzt: "Wahlarzt",
             contact: "Kontakt",
             cta: "Termin buchen",
+            viewAll: "Alle Leistungen anzeigen",
+            bookingIntro: "Ich nehme mir Zeit für Ihre individuelle Betreuung. Vereinbaren Sie Ihren Termin ganz einfach online.",
             subServices: [
                 {
                     title: "Kardiologie",
                     description: "EKG, Ultraschall & Herzdiagnostik",
-                    link: "/services/cardiology",
-                    image: "/about-ultrasound.jpg"
+                    link: "/leistungen/kardiologie",
+                    image: "/services/cardiology.png"
                 },
                 {
                     title: "Diagnostik & Vorsorge",
                     description: "OP-Clearance & Vorsorgeprogramme",
-                    link: "/services/diagnostics",
-                    image: "/hero-consultation.jpg"
+                    link: "/leistungen/diagnostik",
+                    image: "/services/diagnostics.png"
                 },
                 {
                     title: "Spezialbetreuung",
                     description: "COVID-Nachsorge & chronische Leiden",
-                    link: "/services/covid-aftercare",
-                    image: "/about-portrait.jpg"
+                    link: "/leistungen/covid-nachsorge",
+                    image: "/services/covid-aftercare.png"
                 }
             ]
         },
         about: {
             label: "Ihre Fachärztin",
             title: "Dr. Stephanie Sang",
-            quote: '"In meiner Ordination steht der Mensch im Mittelpunkt. Wir nehmen uns die Zeit, die für eine ganzheitliche Betreuung notwendig ist."',
-            text1: "Als Fachärztin für Innere Medizin und Kardiologie verfüge ich über langjährige Erfahrung in der umfassenden Diagnostik und Therapie von Herz-Kreislauf-Erkrankungen.",
-            text2: "Mein Schwerpunkt liegt nicht nur auf der Behandlung akuter Beschwerden, sondern vor allem auf der Prävention und der langfristigen Begleitung meiner Patientinnen und Patienten.",
+            quote: '"In meiner Ordination steht der Mensch im Mittelpunkt. Ich nehme mir die Zeit, die für eine ganzheitliche Betreuung notwendig ist."',
+            text1: "Als Fachärztin für Innere Medizin und Kardiologie begleite ich Sie einfühlsam und kompetent in allen Fragen rund um Herz- und Gefäßerkrankungen sowie internistische Gesundheitsvorsorge.",
+            text2: "Mein Ziel ist es, Sie medizinisch umfassend zu betreuen – mit genügend Zeit für Ihre Anliegen, in ruhiger Atmosphäre und auf aktuellem medizinischem Wissensstand.",
             qualificationsTitle: "Qualifikationen",
-            cvTitle: "Medizinischer Lebenslauf",
+            cvTitle: "Werdegang",
             cvItems: [
                 { year: "Seit 2024", text: "Selbstständige Wahlarztordination in Brand-Laaben" },
                 { year: "Seit 2022", text: "Oberärztin für Innere Medizin & Kardiologie" },
@@ -44,117 +46,117 @@ export const translations = {
             expertiseTitle: "Expertise",
             expertiseItems: [
                 "Kardiologische Funktionsdiagnostik",
-                "Internistische Vorsorge-Untersuchungen",
+                "Vorsorgeuntersuchungen (Gesundenuntersuchung)",
                 "Ganzheitliche Präventivmedizin"
             ],
-            philosophyTitle: "Unsere Philosophie",
-            philosophyText: "Wir glauben an eine Medizin, die sich Zeit nimmt. Eine Medizin, die zuhört und den Menschen hinter den Befunden sieht. In unserer Ordination in Brand-Laaben schaffen wir einen Raum für Vertrauen und fachliche Exzellenz."
+            philosophyTitle: "Meine Philosophie",
+            philosophyText: "Ich glaube an eine Medizin, die sich Zeit nimmt. Eine Medizin, die zuhört und den Menschen hinter den Befunden sieht. In meiner Ordination in Brand-Laaben schaffe ich einen Raum für Vertrauen und fachliche Exzellenz."
         },
         hero: {
             welcome: "Willkommen",
-            headline: "Internistische & Kardiologische Facharztordination – Dr. Sang",
-            subheadline: "Medizinische Kompetenz mit persönlicher Note in Brand-Laaben.",
+            headline: "Ordination Laaben – Dr. Stephanie Sang",
+            subheadline: "Fachärztin für Innere Medizin & Kardiologie",
             primaryCta: "Termin buchen",
-            secondaryCta: "Unsere Leistungen",
+            secondaryCta: "Meine Leistungen",
         },
         infobar: {
             address: "Adresse",
             phone: "Telefon",
             hours: "Öffnungszeiten",
-            hoursValue: "Nach Vereinbarung",
+            hoursValue: "Termine nach Vereinbarung",
         },
         home: {
             welcome: "Willkommen",
-            welcomeHeadline: "Zeit für Ihre Gesundheit.",
-            welcomeText: '"In meiner Ordination steht der Mensch im Mittelpunkt. Wir nehmen uns die Zeit, die für eine ganzheitliche Betreuung notwendig ist."',
-            servicesHeadline: "Unsere Leistungen",
-            wahlarztLabel: "Information",
-            wahlarztHeadline: "Was ist ein Wahlarzt?",
-            wahlarztText1: "Als Wahlarzt habe ich keinen direkten Vertrag mit den Krankenkassen. Das ermöglicht mir, mir ausreichend Zeit für Ihre Anliegen zu nehmen und Ihnen eine persönliche Betreuung ohne Zeitdruck zu bieten.",
-            wahlarztText2: "Sie bezahlen das Honorar zunächst in der Ordination und können die Honorarnote anschließend bei Ihrer Krankenkasse zur teilweisen Rückerstattung einreichen.",
+            welcomeHeadline: "Herzlich willkommen in der Ordination Laaben.",
+            welcomeText: "Als Fachärztin für Innere Medizin und Kardiologie begleite ich Sie einfühlsam und kompetent in allen Fragen rund um Herz- und Gefäßerkrankungen sowie internistische Gesundheitsvorsorge. Mein Ziel ist es, Sie medizinisch umfassend zu betreuen – mit genügend Zeit für Ihre Anliegen, in ruhiger Atmosphäre und auf aktuellem medizinischem Wissensstand.",
+            servicesHeadline: "Meine Leistungen",
+            wahlarztLabel: "Ihre Herzgesundheit in besten Händen",
+            wahlarztHeadline: "Qualität braucht Zeit.",
+            wahlarztText1: "In meiner Wahlarztordination steht der Mensch im Mittelpunkt. Zeit ist ein wesentlicher Faktor für Qualität – diese nehme nehme mir für jedes Gespräch und jede Untersuchung. Sie stehen im Mittelpunkt, ohne Hektik, ohne lange Wartezeiten.",
+            wahlarztText2: "Als Wahlärztin kann ich Ihnen die Zeit widmen, die Sie brauchen. Ob ausführliches Anamnesegespräch oder detaillierte Aufklärung, ich bin für Sie da. In meiner Praxis setze ich auf eine ruhige Atmosphäre und ausführliche Beratung.",
             wahlarztCta: "Mehr erfahren",
             locationHeadline: "Anfahrt",
             services: [
                 {
                     title: "Kardiologie",
                     description: "EKG, Herzultraschall und umfassende Herzdiagnostik für Ihre Sicherheit.",
-                    image: "/about-ultrasound.jpg",
-                    link: "/services/cardiology"
+                    image: "/services/cardiology.png",
+                    link: "/leistungen/kardiologie"
                 },
                 {
                     title: "Vorsorge & OP-Clearance",
                     description: "Präoperative Untersuchungen und individuelle Vorsorgeprogramme.",
-                    image: "/hero-consultation.jpg",
-                    link: "/services/diagnostics"
+                    image: "/services/diagnostics.png",
+                    link: "/leistungen/diagnostik"
                 },
                 {
                     title: "Spezialisierte Betreuung",
                     description: "Ganzheitliche Begleitung bei COVID-Nachsorge und chronischen Leiden.",
-                    image: "/about-portrait.jpg",
-                    link: "/services/covid-aftercare"
+                    image: "/services/covid-aftercare.png",
+                    link: "/leistungen/covid-nachsorge"
                 }
             ]
         },
         services: {
             headline: "Medizinische Leistungen",
-            label: "Unsere Fachgebiete",
-            subheadline: "Wir bieten Ihnen modernste kardiologische und internistische Diagnostik in einer vertrauensvollen Atmosphäre.",
+            label: "Meine Fachgebiete",
+            subheadline: "Ich biete Ihnen modernste kardiologische und internistische Diagnostik in einer vertrauensvollen Atmosphäre.",
             cta: "Detailinfos",
             back: "Zurück zur Übersicht",
-            bookingText: "Benötigen Sie eine Untersuchung in diesem Bereich?",
+            bookingText: "Haben Sie Fragen zu diesen Leistungen?",
             bookingCta: "Termin vereinbaren",
             items: {
-                cardiology: {
+                kardiologie: {
                     title: "Kardiologie",
                     subtitle: "Herz- & Kreislaufdiagnostik",
-                    image: "/about-ultrasound.jpg",
+                    image: "/services/cardiology.png",
                     content: [
-                        "Eine präzise kardiologische Diagnostik ist der Grundstein für Ihre Herzgesundheit. In unserer Ordination nutzen wir modernste Medizintechnik, um Funktionsstörungen frühzeitig zu erkennen und individuell zu behandeln.",
-                        "Vom klassischen EKG bis hin zum hochauflösenden Herzultraschall bieten wir Ihnen das gesamte Spektrum der nicht-invasiven kardiologischen Abklärung.",
+                        "Eine präzise kardiologische Diagnostik ist der Grundstein für Ihre Herzgesundheit. In meiner Ordination nutze ich modernste Medizintechnik, um Funktionsstörungen frühzeitig zu erkennen und individuell zu behandeln.",
+                        "Vom klassischen EKG bis hin zum hochauflösenden Herzultraschall biete ich Ihnen das gesamte Spektrum der nicht-invasiven kardiologischen Abklärung.",
                     ],
                     details: [
-                        { name: "Echokardiographie", desc: "Detaillierter Herzultraschall zur Beurteilung von Herzmuskel, Klappen und Funktion." },
-                        { name: "EKG (Ruhe-EKG)", desc: "Aufzeichnung der elektrischen Herzaktivität zur Rhythmusanalyse." },
-                        { name: "Langzeit-EKG", desc: "Überwachung des Herzrhythmus über 24-72 Stunden bei Herzrasen oder Schwindel." },
-                        { name: "Ergometrie", desc: "Belastungs-EKG zur Beurteilung der Leistungsfähigkeit und Durchblutung." },
+                        { name: "Echokardiographie (Herzultraschall)", desc: "Die Echokardiographie ist eine schonende und schmerzfreie Ultraschalluntersuchung des Herzens. Dabei werden Herzmuskel, Herzklappen und die Pumpfunktion in Echtzeit dargestellt. So lassen sich Durchblutungsstörungen, Klappenerkrankungen, Herzschwäche oder Strukturveränderungen frühzeitig erkennen. Der Herzultraschall ist ein zentrales Diagnoseverfahren in der Kardiologie – völlig strahlenfrei und jederzeit wiederholbar." },
+                        { name: "EKG (Elektrokardiogramm)", desc: "Das EKG ist eine einfache und schmerzfreie Untersuchung, bei der die elektrischen Aktivitäten des Herzens gemessen werden. Über kleine Elektroden auf der Haut können Herzrhythmus, Herzfrequenz und mögliche Durchblutungsstörungen beurteilt werden. So lassen sich Herzrhythmusstörungen, Herzinfarkte oder andere Veränderungen rasch und zuverlässig erkennen." },
+                        { name: "Langzeit-EKG", desc: "Beim Langzeit-EKG wird die elektrische Aktivität des Herzens über 24 bis 72 Stunden mittels eines kleinen, tragbaren Geräts aufgezeichnet. So können Herzrhythmus und mögliche Unregelmäßigkeiten im Alltag erfasst werden. Die Auswertung liefert wertvolle Hinweise auf Herzrhythmusstörungen, Herzrasen oder unklare Schwindel- und Ohnmachtsanfälle." },
+                        { name: "Ergometrie", desc: "Belastungs-EKG zur Beurteilung der Leistungsfähigkeit und Durchblutung unter körperlicher Belastung." },
                     ]
                 },
-                vascular: {
+                gefaessmedizin: {
                     title: "Gefäßmedizin",
                     subtitle: "Prävention & Ultraschall",
-                    image: "/hero-consultation.jpg",
+                    image: "/services/vascular.png",
                     content: [
-                        "Gesunde Gefäße sind lebenswichtig. Unser Fokus liegt auf der Früherkennung von Arterienverkalkungen (Atherosklerose), um Schlaganfälle und Durchblutungsstörungen effektiv zu verhindern.",
-                        "Mittels farbkodierter Duplex-Sonographie können wir Ihre Gefäße schmerzfrei und ohne Strahlenbelastung visualisieren und beurteilen.",
+                        "Gesunde Gefäße sind lebenswichtig. Mein Fokus liegt auf der Früherkennung von Arterienverkalkungen (Atherosklerose), um Schlaganfälle und Durchblutungsstörungen effektiv zu verhindern.",
+                        "Mittels farbkodierter Duplex-Sonographie kann ich Ihre Gefäße schmerzfrei und ohne Strahlenbelastung visualisieren und beurteilen.",
                     ],
                     details: [
-                        { name: "Carotis-Duplex", desc: "Ultraschall der Halsschlagadern zur Schlaganfall-Prävention." },
-                        { name: "Arterieller Status", desc: "Untersuchung der Beingefäße bei Verdacht auf 'Schaufensterkrankheit'." },
-                        { name: "Aorta-Screening", desc: "Vorsorgeuntersuchung zur Früherkennung von Aneurysmen (Gefäßerweiterungen)." },
+                        { name: "Carotis-Ultraschall", desc: "Der Carotis-Ultraschall ist eine schmerzfreie Untersuchung der Halsschlagadern. Dabei können Ablagerungen (Plaques), Gefäßverengungen oder Durchblutungsstörungen frühzeitig erkannt werden. Durch die genaue Beurteilung des Gefäßzustands lässt sich Ihr individuelles Schlaganfallrisiko besser einschätzen." },
+                        { name: "pAVK-Abklärung", desc: "Untersuchung der Beingefäße bei Verdacht auf Durchblutungsstörungen ('Schaufensterkrankheit')." },
+                        { name: "Aorta-Screening", desc: "Vorsorgeuntersuchung zur Früherkennung von Aneurysmen (Gefäßerweiterungen) mittels Ultraschall." },
                     ]
                 },
-                diagnostics: {
+                diagnostik: {
                     title: "Innere Medizin",
                     subtitle: "Umfassende Diagnostik",
-                    image: "/about-portrait.jpg",
+                    image: "/services/diagnostics.png",
                     content: [
-                        "Die Innere Medizin ist das Fundament der fächerübergreifenden Diagnostik. Wir koordinieren Ihre Befunde und bieten Ihnen eine ganzheitliche internistische Betreuung.",
-                        "Besonders vor geplanten Operationen (OP-Clearance) oder im Rahmen der jährlichen Vorsorgeuntersuchung sind wir Ihr kompetenter Ansprechpartner.",
+                        "Die Innere Medizin ist das Fundament der fächerübergreifenden Diagnostik. Ich koordiniere Ihre Befunde und biete Ihnen eine ganzheitliche internistische Betreuung.",
+                        "Besonders vor geplanten Operationen (OP-Clearance) oder im Rahmen der jährlichen Vorsorgeuntersuchung bin ich Ihre kompetente Ansprechpartnerin.",
                     ],
                     details: [
-                        { name: "OP-Freigaben", desc: "Umfassende präoperative Untersuchung inkl. EKG und Laborfreigabe." },
-                        { name: "Spirometrie", desc: "Lungenfunktionstest zur Abklärung von Atemnot oder Husten." },
-                        { name: "24h-Blutdruck", desc: "Langzeitmessung zur optimalen Einstellung einer Hypertonie (Bluthochdruck)." },
-                        { name: "Laboranalysen", desc: "Umfassende Blutuntersuchungen in Kooperation mit Fachlaboren." },
+                        { name: "OP-Freigaben", desc: "Umfassende präoperative Untersuchung inkl. EKG und Laborfreigabe für Ihre Sicherheit." },
+                        { name: "Spirometrie", desc: "Die Spirometrie ist ein Lungenfunktionstest, mit dem gemessen wird, wie viel Luft eine Person ein- und ausatmen kann und wie schnell das geschieht. Sie wird eingesetzt, um Atemwegserkrankungen wie Asthma oder COPD zu erkennen. Der Test ist schmerzfrei und erfolgt durch kräftiges Atmen in ein Messgerät." },
+                        { name: "Langzeit-Blutdruckmessung", desc: "Hierbei wird Ihr Blutdruck über 24 Stunden regelmäßig aufgezeichnet. So lassen sich natürliche Schwankungen im Tages- und Nachtverlauf erfassen und ein genaues Bild Ihrer Blutdrucksituation gewinnen – wichtig für die sichere Diagnose und optimale Therapie." },
+                        { name: "Laboranalysen", desc: "Umfassende Blutuntersuchungen in Kooperation mit Fachlaboren für eine präzise Diagnostik." },
                     ]
                 },
-                "covid-aftercare": {
+                "covid-nachsorge": {
                     title: "COVID Nachsorge",
                     subtitle: "Regeneration & Support",
-                    image: "/hero-consultation.jpg",
+                    image: "/services/covid-aftercare.png",
                     content: [
                         "Viele Patientinnen und Patienten leiden nach einer COVID-19-Infektion unter langanhaltenden Beschwerden wie Atemnot, Herzrasen oder ausgeprägter Erschöpfung (Fatigue).",
-                        "Wir bieten Ihnen eine spezialisierte kardiologische und internistische Abklärung, um organische Ursachen auszuschließen und Ihren Weg zurück in den Alltag zu unterstützen.",
+                        "Ich biete Ihnen eine spezialisierte kardiologische und internistische Abklärung, um organische Ursachen auszuschließen und Ihren Weg zurück in den Alltag zu unterstützen.",
                     ],
                     details: [
                         { name: "Kardiale Abklärung", desc: "Ausschluss von Herzmuskelentzündungen (Myokarditis) nach Infektion." },
@@ -166,27 +168,28 @@ export const translations = {
         },
         wahlarzt: {
             label: "Information",
-            title: "Wahlarzt-System",
-            quote: '"Ein Wahlarzt ist ein niedergelassener Arzt, der keinen Vertrag mit den Krankenkassen hat. Das bedeutet für Sie vor allem: Zeit, Flexibilität und persönliche Betreuung."',
+            title: "Ihre Vorteile in einer Wahlarztordination",
+            quote: '"In meiner Wahlarztordination steht der Mensch im Mittelpunkt. Qualität braucht Zeit. Diese nehme ich mir für jedes Gespräch und jede Untersuchung."',
             howTitle: "Wie funktioniert es?",
-            howText: "Das Prinzip ist einfach: Sie erhalten für die erbrachte Leistung eine Honorarnote, die Sie zunächst in der Ordination begleichen. Danach reichen wir (auf Wunsch) oder Sie die Rechnung bei Ihrer Krankenkasse ein.",
-            reimbursementTitle: "Kostenrückerstattung",
-            reimbursementText: "Ihre Krankenkasse (ÖGK, SVS, BVAEB, etc.) erstattet Ihnen einen Teil des Honorars zurück. In der Regel sind dies ca. 80% dessen, was ein Vertragsarzt für dieselbe Leistung erhalten würde.",
+            howText: "Als Wahlarztordination verrechne ich direkt mit Ihnen. Es besteht die Möglichkeit der Barzahlung oder mit Bankomat-Karte. Ein Teil der Kosten wird – abhängig von Ihrer Krankenkasse – rückerstattet.",
+            reimbursementTitle: "Kostenerstattung",
+            reimbursementText: "Gerne unterstütze ich Sie bei der Einreichung Ihrer Honorarnote beim zuständigen Sozialversicherungsträger. In der Regel erstattet die Kasse einen Teil der Kosten zurück.",
             processTitle: "Der Ablauf",
             processItems: [
-                "Untersuchung & Beratung in Ruhe",
-                "Bezahlung (Bar oder Karte)",
-                "Einreichung bei der Krankenkasse",
-                "Teilweise Rückerstattung auf Ihr Konto"
+                "Ausführliches Anamnesegespräch & Untersuchung",
+                "Bezahlung in der Ordination (Bar oder Karte)",
+                "Einreichung der Honorarnote (mit meiner Unterstützung)",
+                "Teilweise Rückerstattung durch Ihre Krankenkasse"
             ],
-            benefitsTitle: "Ihre Vorteile",
+            benefitsTitle: "Warum Wahlärztin?",
             benefits: [
-                { title: "Mehr Zeit", text: "Ausführliche Gespräche und Untersuchungen ohne Zeitdruck." },
-                { title: "Kurze Wartezeiten", text: "Termingenaue Planung für minimalen Zeitverlust." },
-                { title: "Schnelle Termine", text: "Kurzfristige Terminvergabe bei akuten Anliegen." }
+                { title: "Ausreichend Zeit", text: "Für individuelle Beratung und persönliche Betreuung ohne Hektik." },
+                { title: "Kurze Wartezeiten", text: "Termingenaue Planung und flexible Terminvergabe." },
+                { title: "Verständliche Beratung", text: "Transparente Aufklärung und Zeit für alle Ihre Fragen." },
+                { title: "Enge Zusammenarbeit", text: "Mit Haus- und Fachärzt:innen sowie Kliniken." }
             ],
-            footerTitle: "Noch Fragen?",
-            footerText: "Gibt es Unklarheiten zur Einreichung oder den Kosten? Wir beraten Sie gerne vorab telefonisch.",
+            footerTitle: "Terminvereinbarung",
+            footerText: "Termine sind nach telefonischer Vereinbarung oder Online-Anmeldung möglich. Bitte bringen Sie vorhandene Befunde, Medikamentenlisten oder Vorbefunde mit.",
             footerCta: "Termin online buchen"
         },
         legal: {
@@ -211,9 +214,10 @@ export const translations = {
             privacyRightsValue: "Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt worden sind, können Sie sich bei der Aufsichtsbehörde beschweren."
         },
         footer: {
+            description: "Fachärztin für Innere Medizin & Kardiologie",
             contact: "Kontakt",
-            hours: "Öffnungszeiten",
-            hoursValue: "Termine nach telefonischer Vereinbarung oder online.",
+            hours: "Termine",
+            hoursValue: "Nach telefonischer Vereinbarung oder Online-Anmeldung.",
             imprint: "Impressum",
             privacy: "Datenschutz",
         },
@@ -231,34 +235,37 @@ export const translations = {
             wahlarzt: "Private Practice",
             contact: "Contact",
             cta: "Book Appointment",
+            viewAll: "View all services",
+            bookingIntro: "I take time for your individual care. Book your appointment easily online.",
             subServices: [
                 {
                     title: "Cardiology",
                     description: "ECG, Ultrasound & Heart Diagnostics",
-                    link: "/services/cardiology",
-                    image: "/about-ultrasound.jpg"
+                    link: "/leistungen/kardiologie",
+                    image: "/services/cardiology.png"
                 },
                 {
                     title: "Diagnostics & Prevention",
                     description: "OP-Clearance & Check-ups",
-                    link: "/services/diagnostics",
-                    image: "/hero-consultation.jpg"
+                    link: "/leistungen/diagnostik",
+                    image: "/services/diagnostics.png"
                 },
                 {
                     title: "Specialized Care",
                     description: "COVID aftercare & chronic conditions",
-                    link: "/services/covid-aftercare",
-                    image: "/about-portrait.jpg"
+                    link: "/leistungen/covid-nachsorge",
+                    image: "/services/covid-aftercare.png"
                 }
             ]
         },
         about: {
             label: "Your Specialist",
             title: "Dr. Stephanie Sang",
-            quote: '"In my practice, the individual is at the center. We take the time necessary for holistic care."',
-            text1: "As a specialist in internal medicine and cardiology, I have many years of experience in the comprehensive diagnostics and therapy of cardiovascular diseases.",
-            text2: "My focus is not only on the treatment of acute symptoms, but especially on prevention and the long-term support of my patients.",
+            quote: '"In my practice, the individual is at the center. I take the time necessary for holistic care."',
+            text1: "As a specialist in internal medicine and cardiology, I accompany you sensitively and competently in all questions regarding heart and vascular diseases as well as internal medical health prevention.",
+            text2: "My goal is to provide you with comprehensive medical care – with sufficient time for your concerns, in a calm atmosphere and on the current state of medical knowledge.",
             qualificationsTitle: "Qualifications",
+
             cvTitle: "Medical CV",
             cvItems: [
                 { year: "Since 2024", text: "Independent private practice in Brand-Laaben" },
@@ -271,15 +278,15 @@ export const translations = {
                 "Internal medicine check-ups",
                 "Holistic preventive medicine"
             ],
-            philosophyTitle: "Our Philosophy",
-            philosophyText: "We believe in medicine that takes time. Medicine that listens and sees the person behind the findings. In our practice in Brand-Laaben, we create a space for trust and professional excellence."
+            philosophyTitle: "My Philosophy",
+            philosophyText: "I believe in medicine that takes time. Medicine that listens and sees the person behind the findings. In my practice in Brand-Laaben, I create a space for trust and professional excellence."
         },
         hero: {
             welcome: "Welcome",
-            headline: "Specialist Practice for Internal Medicine & Cardiology – Dr. Sang",
-            subheadline: "Medical expertise with a personal touch in Brand-Laaben.",
+            headline: "Practice Laaben – Dr. Stephanie Sang",
+            subheadline: "Specialist for Internal Medicine & Cardiology",
             primaryCta: "Book Appointment",
-            secondaryCta: "Our Services",
+            secondaryCta: "My Services",
         },
         infobar: {
             address: "Address",
@@ -289,96 +296,96 @@ export const translations = {
         },
         home: {
             welcome: "Welcome",
-            welcomeHeadline: "Time for your health.",
-            welcomeText: '"In my practice, the individual is at the center. We take the time necessary for holistic care."',
-            servicesHeadline: "Our Services",
-            wahlarztLabel: "Information",
-            wahlarztHeadline: "What is a Private Physician?",
-            wahlarztText1: "As a 'Wahlarzt' (private physician), I do not have a direct contract with health insurance providers. This allows me to take sufficient time for your concerns and offer you personal care without time pressure.",
-            wahlarztText2: "You pay the fee at the practice first and can then submit the invoice to your health insurance for partial reimbursement.",
+            welcomeHeadline: "Welcome to Ordination Laaben.",
+            welcomeText: "As a specialist in internal medicine and cardiology, I accompany you sensitively and competently in all questions regarding heart and vascular diseases as well as internal medical health prevention. My goal is to provide you with comprehensive medical care – with sufficient time for your concerns, in a calm atmosphere and on the current state of medical knowledge.",
+            servicesHeadline: "My Services",
+            wahlarztLabel: "Your heart health in best hands",
+            wahlarztHeadline: "Quality needs time.",
+            wahlarztText1: "In my private practice, the focus is on the individual. Time is a key factor for quality – I take this time for every conversation and every examination. You are at the center, without haste, without long waiting times.",
+            wahlarztText2: "As a private physician, I can dedicate the time you need. Whether it's an extensive anamnesis talk or detailed explanation, I am here for you. In my practice, I rely on a calm atmosphere and detailed advice.",
             wahlarztCta: "Learn more",
             locationHeadline: "Location",
             services: [
                 {
                     title: "Cardiology",
                     description: "ECG, heart ultrasound, and comprehensive heart diagnostics for your safety.",
-                    image: "/about-ultrasound.jpg",
-                    link: "/services/cardiology"
+                    image: "/services/cardiology.png",
+                    link: "/leistungen/kardiologie"
                 },
                 {
                     title: "Prevention & Clearance",
                     description: "Preoperative examinations and individual prevention programs.",
-                    image: "/hero-consultation.jpg",
-                    link: "/services/diagnostics"
+                    image: "/services/diagnostics.png",
+                    link: "/leistungen/diagnostik"
                 },
                 {
                     title: "Specialized Care",
                     description: "Holistic support for COVID aftercare and chronic conditions.",
-                    image: "/about-portrait.jpg",
-                    link: "/services/covid-aftercare"
+                    image: "/services/covid-aftercare.png",
+                    link: "/leistungen/covid-nachsorge"
                 }
             ]
         },
         services: {
             headline: "Medical Services",
-            label: "Our Specializations",
-            subheadline: "We offer modern cardiological and internal medical diagnostics in a trustful atmosphere.",
+            label: "My Specializations",
+            subheadline: "I offer modern cardiological and internal medical diagnostics in a trustful atmosphere.",
             cta: "Detailed info",
             back: "Back to overview",
             bookingText: "Do you need an examination in this area?",
             bookingCta: "Schedule appointment",
             items: {
-                cardiology: {
+                kardiologie: {
                     title: "Cardiology",
                     subtitle: "Heart & Circulatory Diagnostics",
-                    image: "/about-ultrasound.jpg",
+                    image: "/services/cardiology.png",
                     content: [
-                        "Precise cardiological diagnostics is the foundation for your heart health. in our practice, we use the latest medical technology to detect functional disorders early and treat them individually.",
-                        "From classic ECG to high-resolution heart ultrasound, we offer you the entire spectrum of non-invasive cardiological evaluation.",
+                        "Precise cardiological diagnostics is the foundation for your heart health. In my practice, I use the latest medical technology to detect functional disorders early and treat them individually.",
+                        "From classic ECG to high-resolution heart ultrasound, I offer you the entire spectrum of non-invasive cardiological evaluation.",
                     ],
                     details: [
-                        { name: "Echocardiography", desc: "Detailed heart ultrasound for evaluating cardiac muscle, valves, and function." },
-                        { name: "ECG (Resting ECG)", desc: "Recording electrical heart activity for rhythm analysis." },
-                        { name: "Long-term ECG", desc: "Monitoring heart rhythm over 24-72 hours for palpitations or dizziness." },
-                        { name: "Ergometry", desc: "Stress ECG for evaluating performance and circulation." },
+                        { name: "Echocardiography (Heart Ultrasound)", desc: "Echocardiography is a gentle and painless ultrasound examination of the heart. Cardiac muscle, heart valves and pump function are displayed in real time. This allows for early detection of circulatory disorders, valve diseases, heart failure or structural changes. Heart ultrasound is a central diagnostic procedure in cardiology – completely radiation-free and repeatable at any time." },
+                        { name: "ECG (Electrocardiogram)", desc: "The ECG is a simple and painless examination that measures the electrical activities of the heart. Heart rhythm, heart rate and possible circulatory disorders can be assessed via small electrodes on the skin. This allows heart rhythm disturbances, heart attacks or other changes to be recognized quickly and reliably." },
+                        { name: "Long-term ECG", desc: "In a long-term ECG, the electrical activity of the heart is recorded over 24 to 72 hours using a small, portable device. This allowing heart rhythm and possible irregularities to be captured in everyday life. The evaluation provides valuable clues to heart rhythm disturbances, racing heart or unclear episodes of dizziness and fainting." },
+                        { name: "Ergometry", desc: "Stress ECG to assess performance and blood flow under physical stress." },
                     ]
                 },
-                vascular: {
+                gefaessmedizin: {
                     title: "Vascular Medicine",
                     subtitle: "Prevention & Ultrasound",
-                    image: "/hero-consultation.jpg",
+                    image: "/services/vascular.png",
                     content: [
-                        "Healthy vessels are essential. Our focus is on early detection of arterial calcification (atherosclerosis) to effectively prevent strokes and circulatory disorders.",
-                        "Using color-coded duplex sonography, we can visualize and evaluate your vessels painlessly and without radiation exposure.",
+                        "Healthy vessels are essential. My focus is on early detection of arterial calcification (atherosclerosis) to effectively prevent strokes and circulatory disorders.",
+                        "Using color-coded duplex sonography, I can visualize and evaluate your vessels painlessly and without radiation exposure.",
                     ],
                     details: [
-                        { name: "Carotis Duplex", desc: "Ultrasound of carotid arteries for stroke prevention." },
-                        { name: "Arterial Status", desc: "Examination of leg vessels when intermittent claudication is suspected." },
-                        { name: "Aorta Screening", desc: "Preventive examination for early detection of aneurysms (vascular dilations)." },
+                        { name: "Carotid Ultrasound", desc: "Carotid ultrasound is a painless examination of the carotid arteries. Deposits (plaques), vascular constrictions or circulatory disorders can be detected early. Through the precise assessment of the vascular state, your individual stroke risk can be better estimated." },
+                        { name: "Arterial Status", desc: "Examination of leg vessels when circulatory disorders ('window-shopping disease') are suspected." },
+                        { name: "Aorta Screening", desc: "Preventive examination for early detection of aneurysms (vascular dilations) using ultrasound." },
                     ]
                 },
-                diagnostics: {
+                diagnostik: {
                     title: "Internal Medicine",
                     subtitle: "Comprehensive Diagnostics",
-                    image: "/about-portrait.jpg",
+                    image: "/services/diagnostics.png",
                     content: [
-                        "Internal medicine is the foundation of interdisciplinary diagnostics. We coordinate your findings and offer you holistic internal medical care.",
-                        "Especially before planned operations (OP clearance) or within the framework of the annual check-up, we are your competent partner.",
+                        "Internal medicine is the foundation of interdisciplinary diagnostics. I coordinate your findings and offer you holistic internal medical care.",
+                        "Especially before planned operations (OP clearance) or within the framework of the annual check-up, I am your competent partner.",
                     ],
                     details: [
-                        { name: "OP Clearances", desc: "Comprehensive preoperative examination including ECG and lab clearance." },
-                        { name: "Spirometry", desc: "Lung function test for clarifying shortness of breath or cough." },
-                        { name: "24h Blood Pressure", desc: "Long-term measurement for optimal management of hypertension." },
-                        { name: "Lab Analysis", desc: "Comprehensive blood tests in cooperation with specialist labs." },
+                        { name: "OP Clearances", desc: "Comprehensive preoperative examination including ECG and lab clearance for your safety." },
+                        { name: "Spirometry", desc: "Spirometry is a lung function test that measures how much air a person can inhale and exhale and how fast that happens. it is used to detect respiratory diseases such as asthma or COPD. The test is painless and involves breathing forcefully into a measuring device." },
+                        { name: "Long-term Blood Pressure", desc: "Here, your blood pressure is recorded regularly over 24 hours. This allows natural fluctuations throughout the day and night to be captured and a precise picture of your blood pressure situation to be gained – important for reliable diagnosis and optimal therapy." },
+                        { name: "Lab Analysis", desc: "Comprehensive blood tests in cooperation with specialist labs for precise diagnostics." },
                     ]
                 },
-                "covid-aftercare": {
+                "covid-nachsorge": {
                     title: "COVID Aftercare",
                     subtitle: "Regeneration & Support",
-                    image: "/hero-consultation.jpg",
+                    image: "/services/covid-aftercare.png",
                     content: [
                         "Many patients suffer from long-lasting complaints after a COVID-19 infection, such as shortness of breath, palpitations, or pronounced exhaustion (fatigue).",
-                        "We offer you specialized cardiological and internal medical evaluation to exclude organic causes and support your way back into everyday life.",
+                        "I offer you specialized cardiological and internal medical evaluation to exclude organic causes and support your way back into everyday life.",
                     ],
                     details: [
                         { name: "Cardiac Evaluation", desc: "Exclusion of heart muscle inflammation (myocarditis) after infection." },
@@ -390,27 +397,28 @@ export const translations = {
         },
         wahlarzt: {
             label: "Information",
-            title: "Private Practice System",
-            quote: '"A Wahlarzt is an independent physician who has no direct contract with health insurance providers. This primarily means for you: time, flexibility, and personal care."',
+            title: "Your advantages in a private practice",
+            quote: '"In my private practice, the focus is on the individual. Quality needs time. I take this time for every conversation and every examination."',
             howTitle: "How does it work?",
-            howText: "The principle is simple: You receive an invoice for the service provided, which you first settle at the practice. Then we (on request) or you submit the invoice to your health insurance.",
+            howText: "As a private practice, I bill you directly. Payment can be made in cash or by debit card. A part of the costs will be reimbursed – depending on your health insurance.",
             reimbursementTitle: "Reimbursement",
-            reimbursementText: "Your health insurance (ÖGK, SVS, BVAEB, etc.) will reimburse you for part of the fee. Generally, this is approximately 80% of what a contracted physician would receive for the same service.",
+            reimbursementText: "I am happy to support you with the submission of your medical fee note to the responsible social security provider. Usually, the insurance reimburses a part of the costs.",
             processTitle: "The Procedure",
             processItems: [
-                "Examination & consultation in peace",
-                "Payment (cash or card)",
-                "Submission to the health insurance",
-                "Partial reimbursement to your account"
+                "Detailed anamnesis talk & examination",
+                "Payment in the practice (cash or card)",
+                "Submission of the fee note (with my support)",
+                "Partial reimbursement by your health insurance"
             ],
-            benefitsTitle: "Your Advantages",
+            benefitsTitle: "Why Private Physician?",
             benefits: [
-                { title: "More Time", text: "Detailed conversations and examinations without time pressure." },
-                { title: "Short Wait Times", text: "Precise scheduling for minimal time loss." },
-                { title: "Quick Appointments", text: "Short-term appointment scheduling for acute concerns." }
+                { title: "Sufficient Time", text: "For individual advice and personal care without haste." },
+                { title: "Short Wait Times", text: "Precise scheduling and flexible appointment allocation." },
+                { title: "Understandable Advice", text: "Transparent information and time for all your questions." },
+                { title: "Close Cooperation", text: "With general practitioners, specialists and clinics." }
             ],
-            footerTitle: "Any Questions?",
-            footerText: "Is there any ambiguity regarding submission or costs? We would be happy to advise you in advance by phone.",
+            footerTitle: "Appointment Scheduling",
+            footerText: "Appointments are possible by telephone or online registration. Please bring existing results, medication lists or prior findings with you.",
             footerCta: "Book appointment online"
         },
         legal: {
@@ -435,9 +443,10 @@ export const translations = {
             privacyRightsValue: "In principle, you have the rights to information, correction, deletion, restriction, data portability, revocation, and objection. If you believe that the processing of your data violates data protection law or your data protection claims have otherwise been violated, you can complain to the supervisory authority."
         },
         footer: {
+            description: "Specialist for Internal Medicine & Cardiology",
             contact: "Contact",
-            hours: "Hours",
-            hoursValue: "Appointments by telephone agreement or online.",
+            hours: "Appointments",
+            hoursValue: "By telephone agreement or online registration.",
             imprint: "Imprint",
             privacy: "Privacy Policy",
         },

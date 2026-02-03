@@ -33,7 +33,7 @@ export default function Hero() {
                             </span>
                         </a>
                         <Link
-                            href="/services"
+                            href="/leistungen"
                             className="border border-slate-200 text-slate-900 text-[10px] uppercase tracking-[0.2em] font-bold px-10 py-5 rounded-none hover:bg-slate-50 transition-colors text-center"
                         >
                             {t.hero.secondaryCta}

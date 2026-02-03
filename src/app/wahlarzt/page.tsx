@@ -63,17 +63,17 @@ export default function WahlarztPage() {
                     </div>
                 </section>
 
-                <div className="bg-slate-900 p-16 text-center text-white rounded-sm relative overflow-hidden group">
-                    <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
+                <div className="bg-primary p-16 text-center text-white rounded-sm relative overflow-hidden group">
+                    <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
                     <h2 className="font-display text-3xl mb-8 relative z-10">{t.wahlarzt.footerTitle}</h2>
-                    <p className="text-slate-400 font-light mb-12 max-w-xl mx-auto relative z-10">
+                    <p className="text-white/70 font-light mb-12 max-w-xl mx-auto relative z-10">
                         {t.wahlarzt.footerText}
                     </p>
                     <a
                         href={BOOKING_LINK}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-white text-slate-900 text-[10px] uppercase tracking-[0.2em] font-bold px-12 py-5 hover:bg-primary hover:text-white transition-all inline-block relative z-10 shadow-xl active:scale-95"
+                        className="bg-white text-slate-900 text-[10px] uppercase tracking-[0.2em] font-bold px-12 py-5 hover:bg-slate-900 hover:text-white transition-all inline-block relative z-10 shadow-xl active:scale-95"
                     >
                         {t.wahlarzt.footerCta}
                     </a>

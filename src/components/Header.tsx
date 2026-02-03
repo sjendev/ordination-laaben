@@ -8,6 +8,7 @@ import { BOOKING_LINK } from "@/config/links";
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+    const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
     const { language, setLanguage, t } = useLanguage();
 
     return (
@@ -27,7 +28,7 @@ export default function Header() {
 
             <nav className="hidden lg:flex flex-1 justify-center items-center gap-10 text-[11px] uppercase tracking-widest font-medium h-full">
                 <Link
-                    href="/about"
+                    href="/ueber-uns"
                     className="hover:text-primary transition-colors"
                     onMouseEnter={() => setIsMegaMenuOpen(false)}
                 >
@@ -38,7 +39,7 @@ export default function Header() {
                     className="relative py-2"
                     onMouseEnter={() => setIsMegaMenuOpen(true)}
                 >
-                    <Link href="/services" className="hover:text-primary transition-colors flex items-center gap-1 group">
+                    <Link href="/leistungen" className="hover:text-primary transition-colors flex items-center gap-1 group">
                         {t.nav.services}
                         <span className={`material-symbols-outlined text-[14px] transition-transform duration-300 ${isMegaMenuOpen ? 'rotate-180' : ''}`}>
                             expand_more
@@ -81,7 +82,7 @@ export default function Header() {
                                             {t.nav.cta}
                                         </p>
                                         <p className="text-[12px] text-slate-500 font-light leading-relaxed mb-8">
-                                            Wir nehmen uns Zeit für Ihre individuelle Betreuung. Vereinbaren Sie Ihren Termin ganz einfach online.
+                                            {t.nav.bookingIntro}
                                         </p>
                                     </div>
                                     <a
@@ -107,7 +108,7 @@ export default function Header() {
                     {t.nav.wahlarzt}
                 </Link>
                 <Link
-                    href="/contact"
+                    href="/kontakt"
                     className="hover:text-primary transition-colors"
                     onMouseEnter={() => setIsMegaMenuOpen(false)}
                 >
@@ -157,18 +158,50 @@ export default function Header() {
 
             {/* Mobile Menu */}
             {isMenuOpen && (
-                <div className="absolute top-full left-0 w-full bg-white/95 backdrop-blur-md border-t border-slate-100 p-8 flex flex-col gap-8 lg:hidden animate-in fade-in slide-in-from-top-2">
+                <div className="absolute top-full left-0 w-full bg-white/95 backdrop-blur-md border-t border-slate-100 p-8 flex flex-col gap-8 lg:hidden animate-in fade-in slide-in-from-top-2 overflow-y-auto max-h-[85vh]">
                     <nav className="flex flex-col gap-6 text-xs uppercase tracking-widest font-medium text-center">
-                        <Link href="/about" onClick={() => setIsMenuOpen(false)}>{t.nav.about}</Link>
-                        <Link href="/services" onClick={() => setIsMenuOpen(false)}>{t.nav.services}</Link>
+                        <Link href="/ueber-uns" onClick={() => setIsMenuOpen(false)}>{t.nav.about}</Link>
+
+                        <div className="flex flex-col gap-4">
+                            <button
+                                onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                                className="flex items-center justify-center gap-2 group mx-auto"
+                            >
+                                {t.nav.services}
+                                <span className={`material-symbols-outlined text-sm transition-transform duration-300 ${isMobileServicesOpen ? 'rotate-180' : ''}`}>
+                                    expand_more
+                                </span>
+                            </button>
+
+                            <div className={`flex flex-col gap-4 overflow-hidden transition-all duration-500 ease-in-out ${isMobileServicesOpen ? 'max-h-screen opacity-100 mt-2' : 'max-h-0 opacity-0'}`}>
+                                {t.nav.subServices?.map((service: any, index: number) => (
+                                    <Link
+                                        key={index}
+                                        href={service.link}
+                                        onClick={() => setIsMenuOpen(false)}
+                                        className="text-[10px] text-slate-500 hover:text-primary transition-colors py-2 border-b border-black/[0.03] mx-10"
+                                    >
+                                        {service.title}
+                                    </Link>
+                                ))}
+                                <Link
+                                    href="/leistungen"
+                                    onClick={() => setIsMenuOpen(false)}
+                                    className="text-[9px] font-bold text-primary mt-2"
+                                >
+                                    {t.nav.viewAll}
+                                </Link>
+                            </div>
+                        </div>
+
                         <Link href="/wahlarzt" onClick={() => setIsMenuOpen(false)}>{t.nav.wahlarzt}</Link>
-                        <Link href="/contact" onClick={() => setIsMenuOpen(false)}>{t.nav.contact}</Link>
+                        <Link href="/kontakt" onClick={() => setIsMenuOpen(false)}>{t.nav.contact}</Link>
                     </nav>
                     <a
                         href={BOOKING_LINK}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-primary text-white text-[10px] uppercase tracking-[0.2em] font-bold py-5 text-center shadow-md"
+                        className="bg-primary text-white text-[10px] uppercase tracking-[0.2em] font-bold py-5 text-center shadow-md mt-4"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         {t.nav.cta}

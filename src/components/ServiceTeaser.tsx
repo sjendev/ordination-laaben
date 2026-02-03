@@ -10,17 +10,17 @@ export default function ServiceTeaser() {
         {
             ...t.home.services[0],
             icon: "favorite",
-            link: "/services/cardiology",
+            link: "/leistungen/kardiologie",
         },
         {
             ...t.home.services[1],
             icon: "verified_user",
-            link: "/services/diagnostics",
+            link: "/leistungen/diagnostik",
         },
         {
             ...t.home.services[2],
             icon: "medical_services",
-            link: "/services/covid-aftercare",
+            link: "/leistungen/covid-nachsorge",
         },
     ];
 
