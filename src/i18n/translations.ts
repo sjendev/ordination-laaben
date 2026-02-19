@@ -100,7 +100,7 @@ export const translations = {
             servicesHeadline: "Meine Leistungen",
             wahlarztLabel: "Ihre Herzgesundheit in besten Händen",
             wahlarztHeadline: "Qualität braucht Zeit.",
-            wahlarztText1: "In meiner Wahlarztordination steht der Mensch im Mittelpunkt. Zeit ist ein wesentlicher Faktor für Qualität – diese nehme nehme mir für jedes Gespräch und jede Untersuchung. Sie stehen im Mittelpunkt, ohne Hektik, ohne lange Wartezeiten.",
+            wahlarztText1: "In meiner Wahlarztordination steht der Mensch im Mittelpunkt. Zeit ist ein wesentlicher Faktor für Qualität – diese nehme mir für jedes Gespräch und jede Untersuchung. Sie stehen im Mittelpunkt, ohne Hektik, ohne lange Wartezeiten.",
             wahlarztText2: "Als Wahlärztin kann ich Ihnen die Zeit widmen, die Sie brauchen. Ob ausführliches Anamnesegespräch oder detaillierte Aufklärung, ich bin für Sie da. In meiner Praxis setze ich auf eine ruhige Atmosphäre und ausführliche Beratung.",
             wahlarztCta: "Mehr erfahren",
             locationHeadline: "Anfahrt",
@@ -354,7 +354,7 @@ export const translations = {
             welcomeHeadline: "Welcome to Ordination Laaben.",
             welcomeText: "As a specialist in internal medicine and cardiology, I accompany you sensitively and competently in all questions regarding heart and vascular diseases as well as internal medical health prevention. My goal is to provide you with comprehensive medical care – with sufficient time for your concerns, in a calm atmosphere and on the current state of medical knowledge.",
             servicesHeadline: "My Services",
-            wahlarztLabel: "Your heart health in best hands",
+            wahlarztLabel: "Your heart health in the best hands",
             wahlarztHeadline: "Quality needs time.",
             wahlarztText1: "In my private practice, the focus is on the individual. Time is a key factor for quality – I take this time for every conversation and every examination. You are at the center, without haste, without long waiting times.",
             wahlarztText2: "As a private physician, I can dedicate the time you need. Whether it's an extensive anamnesis talk or detailed explanation, I am here for you. In my practice, I rely on a calm atmosphere and detailed advice.",
@@ -401,7 +401,7 @@ export const translations = {
                     details: [
                         { name: "Heart Ultrasound (Echocardiography)", desc: "Heart ultrasound (echocardiography) is a fundamental diagnostic tool for the heart. It allows for the assessment of heart chambers, pumping function, and heart valves (narrowing, leakage)." },
                         { name: "ECG (Electrocardiogram)", desc: "The ECG (electrocardiogram) records the electrical currents of the heart. With the help of the ECG, rhythm disturbances, conduction delays, or extra beats can be detected, and it provides clues to structural changes or blood flow disturbances in the heart." },
-                        { name: "Long-term ECG", desc: "In a long-term ECG, the electrical activity of the heart is recorded over 24 to 72 hours using a small, portable device. This allowing heart rhythm and possible irregularities to be captured in everyday life. The evaluation provides valuable clues to heart rhythm disturbances, racing heart or unclear episodes of dizziness and fainting." },
+                        { name: "Long-term ECG", desc: "In a long-term ECG, the electrical activity of the heart is recorded over 24 to 72 hours using a small, portable device. This allows heart rhythm and possible irregularities to be captured in everyday life. The evaluation provides valuable clues to heart rhythm disturbances, racing heart or unclear episodes of dizziness and fainting." },
                         { name: "Ergometry", desc: "Stress ECG to assess performance and blood flow under physical stress." },
                     ]
                 },
@@ -429,7 +429,7 @@ export const translations = {
                     ],
                     details: [
                         { name: "OP Clearances", desc: "Comprehensive preoperative examination including ECG and lab clearance for your safety." },
-                        { name: "Spirometry", desc: "Spirometry is a lung function test that measures how much air a person can inhale and exhale and how fast that happens. it is used to detect respiratory diseases such as asthma or COPD. The test is painless and involves breathing forcefully into a measuring device." },
+                        { name: "Spirometry", desc: "Spirometry is a lung function test that measures how much air a person can inhale and exhale and how fast that happens. It is used to detect respiratory diseases such as asthma or COPD. The test is painless and involves breathing forcefully into a measuring device." },
                         { name: "Long-term Blood Pressure", desc: "Here, your blood pressure is recorded regularly over 24 hours. This allows natural fluctuations throughout the day and night to be captured and a precise picture of your blood pressure situation to be gained – important for reliable diagnosis and optimal therapy." },
                         { name: "Lab Analysis", desc: "Comprehensive blood tests in cooperation with specialist labs for precise diagnostics." },
                     ]
@@ -501,7 +501,7 @@ export const translations = {
             description: "Specialist for Internal Medicine & Cardiology",
             contact: "Contact",
             hours: "Appointments",
-            hoursValue: "By telephone agreement or online registration.",
+            hoursValue: "By telephone appointment or online registration.",
             imprint: "Imprint",
             privacy: "Privacy Policy",
         },
