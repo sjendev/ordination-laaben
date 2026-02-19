@@ -8,25 +8,13 @@ export default function ServicesPage() {
 
     const serviceCategories = [
         {
-            title: "EKG",
-            description: t.services.items.kardiologie.details[1].desc,
+            title: t.nav.subServices[0].title,
+            description: t.services.items.kardiologie.content[0],
             image: "/services/cardiology.png",
-            slug: "kardiologie#ekg-elektrokardiogramm"
+            slug: "kardiologie"
         },
         {
-            title: "Herzultraschall",
-            description: t.services.items.kardiologie.details[0].desc,
-            image: "/services/vascular.png",
-            slug: "kardiologie#herzultraschall-echokardiographie"
-        },
-        {
-            title: t.services.items.gefaessmedizin.title,
-            description: t.services.items.gefaessmedizin.content[0],
-            image: "/services/vascular.png",
-            slug: "gefaessmedizin"
-        },
-        {
-            title: t.services.items.diagnostik.title,
+            title: t.nav.subServices[1].title,
             description: t.services.items.diagnostik.content[0],
             image: "/services/diagnostics.png",
             slug: "diagnostik"

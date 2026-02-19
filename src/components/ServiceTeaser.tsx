@@ -17,11 +17,6 @@ export default function ServiceTeaser() {
             icon: "verified_user",
             link: "/leistungen/diagnostik",
         },
-        {
-            ...t.home.services[2],
-            icon: "medical_services",
-            link: "/leistungen/covid-nachsorge",
-        },
     ];
 
     return (
@@ -31,7 +26,7 @@ export default function ServiceTeaser() {
                 <div className="w-12 h-[1px] bg-primary/40 mx-auto mt-6"></div>
             </div>
 
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
                 {services.map((service: any, index: number) => (
                     <div key={index} className="group bg-black/[0.02] border border-black/[0.05] hover:border-primary/20 hover:bg-white/40 transition-all flex flex-col items-center text-center backdrop-blur-sm overflow-hidden">
                         <div className="w-full aspect-video overflow-hidden relative">

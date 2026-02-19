@@ -28,7 +28,7 @@ export default function Header() {
 
             <nav className="hidden lg:flex flex-1 justify-center items-center gap-10 text-[11px] uppercase tracking-widest font-medium h-full">
                 <Link
-                    href="/ueber-uns"
+                    href="/ueber-mich"
                     className="hover:text-primary transition-colors"
                     onMouseEnter={() => setIsMegaMenuOpen(false)}
                 >
@@ -48,8 +48,8 @@ export default function Header() {
 
                     {/* Full-Width Mega Menu Dropdown */}
                     <div className={`fixed top-full left-0 w-full bg-[#F5F6F0] border-y border-black/[0.05] shadow-2xl transition-all duration-500 origin-top overflow-hidden ${isMegaMenuOpen ? 'opacity-100 translate-y-0 visible pointer-events-auto' : 'opacity-0 -translate-y-4 invisible pointer-events-none'}`}>
-                        <div className="max-w-7xl mx-auto px-8 py-12">
-                            <div className="grid grid-cols-4 gap-8">
+                        <div className="max-w-6xl mx-auto px-8 py-12">
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                                 {t.nav.subServices?.map((service: any, index: number) => (
                                     <Link
                                         key={index}
@@ -160,7 +160,7 @@ export default function Header() {
             {isMenuOpen && (
                 <div className="absolute top-full left-0 w-full bg-white/95 backdrop-blur-md border-t border-slate-100 p-8 flex flex-col gap-8 lg:hidden animate-in fade-in slide-in-from-top-2 overflow-y-auto max-h-[85vh]">
                     <nav className="flex flex-col gap-6 text-xs uppercase tracking-widest font-medium text-center">
-                        <Link href="/ueber-uns" onClick={() => setIsMenuOpen(false)}>{t.nav.about}</Link>
+                        <Link href="/ueber-mich" onClick={() => setIsMenuOpen(false)}>{t.nav.about}</Link>
 
                         <div className="flex flex-col gap-4">
                             <button

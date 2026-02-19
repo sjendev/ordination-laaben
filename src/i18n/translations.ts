@@ -2,7 +2,7 @@ export const translations = {
     de: {
         nav: {
             home: "Startseite",
-            about: "Über uns",
+            about: "Über mich",
             services: "Leistungen",
             wahlarzt: "Wahlarzt",
             contact: "Kontakt",
@@ -17,16 +17,10 @@ export const translations = {
                     image: "/services/cardiology.png"
                 },
                 {
-                    title: "Diagnostik & Vorsorge",
-                    description: "OP-Clearance & Vorsorgeprogramme",
+                    title: "Innere Medizin",
+                    description: "Vorsorge, OP-Clearance & Diagnostik",
                     link: "/leistungen/diagnostik",
                     image: "/services/diagnostics.png"
-                },
-                {
-                    title: "Spezialbetreuung",
-                    description: "COVID-Nachsorge & chronische Leiden",
-                    link: "/leistungen/covid-nachsorge",
-                    image: "/services/covid-aftercare.png"
                 }
             ]
         },
@@ -112,16 +106,10 @@ export const translations = {
                     link: "/leistungen/kardiologie"
                 },
                 {
-                    title: "Vorsorge & OP-Clearance",
-                    description: "Präoperative Untersuchungen und individuelle Vorsorgeprogramme.",
+                    title: "Innere Medizin",
+                    description: "Präoperative Untersuchungen, Vorsorge und umfassende internistische Diagnostik.",
                     image: "/services/diagnostics.png",
                     link: "/leistungen/diagnostik"
-                },
-                {
-                    title: "Spezialisierte Betreuung",
-                    description: "Ganzheitliche Begleitung bei COVID-Nachsorge und chronischen Leiden.",
-                    image: "/services/covid-aftercare.png",
-                    link: "/leistungen/covid-nachsorge"
                 }
             ]
         },
@@ -258,7 +246,7 @@ export const translations = {
     en: {
         nav: {
             home: "Home",
-            about: "About",
+            about: "About me",
             services: "Services",
             wahlarzt: "Private Practice",
             contact: "Contact",
@@ -273,16 +261,10 @@ export const translations = {
                     image: "/services/cardiology.png"
                 },
                 {
-                    title: "Diagnostics & Prevention",
-                    description: "OP-Clearance & Check-ups",
+                    title: "Internal Medicine",
+                    description: "Prevention, Clearance & Diagnostics",
                     link: "/leistungen/diagnostik",
                     image: "/services/diagnostics.png"
-                },
-                {
-                    title: "Specialized Care",
-                    description: "COVID aftercare & chronic conditions",
-                    link: "/leistungen/covid-nachsorge",
-                    image: "/services/covid-aftercare.png"
                 }
             ]
         },
@@ -368,16 +350,10 @@ export const translations = {
                     link: "/leistungen/kardiologie"
                 },
                 {
-                    title: "Prevention & Clearance",
-                    description: "Preoperative examinations and individual prevention programs.",
+                    title: "Internal Medicine",
+                    description: "Preoperative examinations, prevention and comprehensive internal diagnostics.",
                     image: "/services/diagnostics.png",
                     link: "/leistungen/diagnostik"
-                },
-                {
-                    title: "Specialized Care",
-                    description: "Holistic support for COVID aftercare and chronic conditions.",
-                    image: "/services/covid-aftercare.png",
-                    link: "/leistungen/covid-nachsorge"
                 }
             ]
         },

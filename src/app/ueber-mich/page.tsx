@@ -14,7 +14,7 @@ export default function AboutPage() {
                         <img
                             src="/about-portrait.jpg"
                             alt={t.about.title}
-                            className="w-full h-full object-cover grayscale-[0.1] group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
+                            className="w-full h-full object-cover object-[center_25%] grayscale-[0.1] group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                     </div>
@@ -49,12 +49,8 @@ export default function AboutPage() {
                                         </li>
                                     ))}
                                 </ul>
-                                <div className="mt-8">
-                                    <button className="text-[10px] uppercase tracking-widest font-bold border-b border-primary/30 pb-1 hover:border-primary transition-colors inline-block text-primary">
-                                        Lebenslauf lesen
-                                    </button>
-                                </div>
                             </div>
+
 
                             <div>
                                 <h2 className="font-display text-2xl mb-8 border-b border-primary/10 pb-4 italic">{t.about.cvTitle}</h2>
