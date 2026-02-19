@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import CookieConsent from "@/components/CookieConsent";
+import SiteLayout from "@/components/SiteLayout";
 import { LanguageProvider } from "@/context/LanguageContext";
 
 const inter = Inter({
@@ -36,10 +34,9 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} ${playfair.variable} antialiased bg-[#F5F6F0]`} style={{ backgroundColor: '#F5F6F0' }}>
         <LanguageProvider>
-          <Header />
-          {children}
-          <Footer />
-          <CookieConsent />
+          <SiteLayout>
+            {children}
+          </SiteLayout>
         </LanguageProvider>
       </body>
     </html>

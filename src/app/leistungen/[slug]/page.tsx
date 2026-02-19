@@ -52,7 +52,11 @@ export default function ServiceDetailPage() {
                     <h2 className="font-display text-3xl mb-16 italic underline decoration-primary/20 underline-offset-8">Methoden & Diagnostik</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-24">
                         {service.details.map((detail: any, i: number) => (
-                            <div key={i} className="space-y-4 group">
+                            <div
+                                key={i}
+                                id={detail.name.toLowerCase().replace(/\s+/g, '-').replace(/[()]/g, '')}
+                                className="space-y-4 group scroll-mt-32"
+                            >
                                 <h3 className="text-[10px] uppercase tracking-[0.3em] font-bold text-slate-800 group-hover:text-primary transition-colors">{detail.name}</h3>
                                 <p className="text-sm text-slate-500 font-light leading-relaxed">{detail.desc}</p>
                             </div>

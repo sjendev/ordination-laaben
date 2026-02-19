@@ -22,7 +22,10 @@ export default function AboutPage() {
                         <span className="text-primary text-[10px] uppercase tracking-[0.4em] font-bold mb-6 block">
                             {t.about.label}
                         </span>
-                        <h1 className="font-display text-4xl md:text-5xl lg:text-6xl mb-10 leading-tight">{t.about.title}</h1>
+                        <h1 className="font-display text-4xl md:text-5xl lg:text-6xl mb-4 leading-tight">{t.about.title}</h1>
+                        <span className="text-slate-400 text-[12px] uppercase tracking-widest mb-10 block font-light">
+                            {t.about.personal}
+                        </span>
                         <p className="text-slate-500 font-light leading-relaxed text-xl mb-12 italic font-display">
                             {t.about.quote}
                         </p>
@@ -33,43 +36,94 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                {/* Qualifikationen Section with Ultrasound Image */}
+                {/* Detailed Bio / CV Section */}
                 <section className="mb-40">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-                        <div className="order-2 lg:order-1">
-                            <h2 className="font-display text-3xl mb-12 border-b border-primary/10 pb-6 italic">{t.about.qualificationsTitle}</h2>
-                            <div className="space-y-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 mb-32">
+                        <div className="space-y-16">
+                            <div>
+                                <h2 className="font-display text-2xl mb-8 border-b border-primary/10 pb-4 italic">{t.about.currentActivityTitle}</h2>
+                                <ul className="space-y-4">
+                                    {t.about.currentActivityItems.map((item: string, i: number) => (
+                                        <li key={i} className="text-sm text-slate-600 font-light leading-relaxed">
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                                <div className="mt-8">
+                                    <button className="text-[10px] uppercase tracking-widest font-bold border-b border-primary/30 pb-1 hover:border-primary transition-colors inline-block text-primary">
+                                        Lebenslauf lesen
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2 className="font-display text-2xl mb-8 border-b border-primary/10 pb-4 italic">{t.about.cvTitle}</h2>
+                                <ul className="space-y-6">
+                                    {t.about.cvItems.map((item: any, i: number) => (
+                                        <li key={i} className="flex gap-6 group">
+                                            <span className="font-bold text-slate-900 text-[11px] uppercase tracking-wider min-w-[90px] pt-1">{item.year}</span>
+                                            <span className="text-slate-500 font-light text-sm group-hover:text-primary transition-colors leading-relaxed">{item.text}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="space-y-16">
+                            <div>
+                                <h2 className="font-display text-2xl mb-8 border-b border-primary/10 pb-4 italic">{t.about.educationTitle}</h2>
+                                <ul className="space-y-6">
+                                    {t.about.educationItems.map((item: any, i: number) => (
+                                        <li key={i} className="flex gap-6 group">
+                                            <span className="font-bold text-slate-400 text-[10px] uppercase tracking-wider min-w-[90px] pt-1">{item.year}</span>
+                                            <span className="text-slate-500 font-light text-sm group-hover:text-primary transition-colors leading-relaxed">{item.text}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                                 <div>
-                                    <h3 className="text-[10px] uppercase tracking-[0.3em] font-bold text-primary mb-8">{t.about.cvTitle}</h3>
-                                    <ul className="space-y-6">
-                                        {t.about.cvItems.map((item: any, i: number) => (
-                                            <li key={i} className="flex gap-6 group">
-                                                <span className="font-bold text-slate-900 text-sm tracking-vocal min-w-[100px]">{item.year}</span>
-                                                <span className="text-slate-500 font-light text-sm group-hover:text-primary transition-colors">{item.text}</span>
+                                    <h3 className="text-[10px] uppercase tracking-[0.3em] font-bold text-primary mb-6">{t.about.membershipsTitle}</h3>
+                                    <ul className="space-y-3">
+                                        {t.about.membershipItems.map((item: string, i: number) => (
+                                            <li key={i} className="text-[12px] text-slate-500 font-light leading-snug">
+                                                {item}
                                             </li>
                                         ))}
                                     </ul>
                                 </div>
                                 <div>
-                                    <h3 className="text-[10px] uppercase tracking-[0.3em] font-bold text-primary mb-8">{t.about.expertiseTitle}</h3>
-                                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        {t.about.expertiseItems.map((item: string, i: number) => (
-                                            <li key={i} className="flex items-center gap-4 text-sm text-slate-600 font-light">
-                                                <span className="w-1.5 h-1.5 rounded-full bg-primary/30"></span>
+                                    <h3 className="text-[10px] uppercase tracking-[0.3em] font-bold text-primary mb-6">{t.about.trainingTitle}</h3>
+                                    <ul className="space-y-3">
+                                        {t.about.trainingItems.map((item: string, i: number) => (
+                                            <li key={i} className="text-[12px] text-slate-500 font-light leading-snug">
                                                 {item}
                                             </li>
                                         ))}
                                     </ul>
                                 </div>
                             </div>
+
+                            <div className="bg-black/[0.02] p-8 rounded-sm border border-black/[0.03]">
+                                <h3 className="text-[10px] uppercase tracking-[0.3em] font-bold text-primary mb-6">{t.about.internationalTitle}</h3>
+                                <ul className="space-y-3">
+                                    {t.about.internationalItems.map((item: string, i: number) => (
+                                        <li key={i} className="text-[12px] text-slate-600 font-medium">
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
-                        <div className="order-1 lg:order-2 aspect-[16/10] bg-slate-100 rounded-sm overflow-hidden shadow-xl border border-black/[0.03] group">
-                            <img
-                                src="/about-ultrasound.jpg"
-                                alt="Dr. Sang Ultrasound Diagnostics"
-                                className="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-105"
-                            />
-                        </div>
+                    </div>
+
+                    <div className="aspect-[21/9] bg-slate-100 rounded-sm overflow-hidden shadow-xl border border-black/[0.03] group">
+                        <img
+                            src="/about-ultrasound.jpg"
+                            alt="Dr. Sang Ultrasound Diagnostics"
+                            className="w-full h-full object-cover transition-transform duration-[3000ms] group-hover:scale-105"
+                        />
                     </div>
                 </section>
 

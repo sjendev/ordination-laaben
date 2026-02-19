@@ -47,6 +47,9 @@ export default function Footer() {
                         <Link href="/datenschutz" className="hover:text-primary transition-colors">
                             {t.footer.privacy}
                         </Link>
+                        <Link href="/admin" className="hover:text-primary transition-colors">
+                            Admin
+                        </Link>
                     </div>
                     <p className="text-[9px] uppercase tracking-widest text-slate-300">
                         © 2026 Ordination Laaben

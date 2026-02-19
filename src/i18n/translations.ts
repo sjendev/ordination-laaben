@@ -33,24 +33,52 @@ export const translations = {
         about: {
             label: "Ihre Fachärztin",
             title: "Dr. Stephanie Sang",
+            personal: "Geboren 1979 in München",
             quote: '"In meiner Ordination steht der Mensch im Mittelpunkt. Ich nehme mir die Zeit, die für eine ganzheitliche Betreuung notwendig ist."',
             text1: "Als Fachärztin für Innere Medizin und Kardiologie begleite ich Sie einfühlsam und kompetent in allen Fragen rund um Herz- und Gefäßerkrankungen sowie internistische Gesundheitsvorsorge.",
             text2: "Mein Ziel ist es, Sie medizinisch umfassend zu betreuen – mit genügend Zeit für Ihre Anliegen, in ruhiger Atmosphäre und auf aktuellem medizinischem Wissensstand.",
             qualificationsTitle: "Qualifikationen",
-            cvTitle: "Werdegang",
+            currentActivityTitle: "Aktuelle Tätigkeit",
+            currentActivityItems: [
+                "Stationsführende Oberärztin im Krankenhaus Barmherzige Brüder Wien, Innere Medizin I, Abteilung für Gastroenterologie, Nephrologie und Kardiologie (Prof. Ferlitsch) (derzeit karenziert)",
+                "Oberärztin in der Funktionsdiagnostik mit Echolabor und Schrittmacherambulanz",
+                "Betreuung von Herzinsuffizienz-Patient*innen"
+            ],
+            cvTitle: "Beruflicher Werdegang",
             cvItems: [
                 { year: "Seit 2024", text: "Selbstständige Wahlarztordination in Brand-Laaben" },
-                { year: "Seit 2022", text: "Oberärztin für Innere Medizin & Kardiologie" },
-                { year: "2016 – 2022", text: "Facharzt-Ausbildung im KH Barmherzige Brüder" }
+                { year: "Juni 2022", text: "Gründung der Praxisgemeinschaft „Ordination Josefstadt“" },
+                { year: "Sept 2020", text: "Wahlärztliche Tätigkeit in der Gemeinschaftsordination „Kardiologie in der Josefstadt“" },
+                { year: "Zusatzfach", text: "Kardiologie: 1. Medizinische Abteilung, Klinikum Donaustadt (Prof. Stefenelli)" },
+                { year: "2014", text: "Facharztprüfung" }
             ],
-            expertiseTitle: "Expertise",
-            expertiseItems: [
-                "Kardiologische Funktionsdiagnostik",
-                "Vorsorgeuntersuchungen (Gesundenuntersuchung)",
-                "Ganzheitliche Präventivmedizin"
+            educationTitle: "Facharztausbildung & Studium",
+            educationItems: [
+                { year: "Ausbildung", text: "Abteilung für Innere Medizin, Barmherzige Brüder Wien (Prof. Meran)" },
+                { year: "Ausbildung", text: "Abteilung für Kardiologie, Pneumologie, Internistische Intensivstation, Klinikum München Schwabing (Prof. Sack)" },
+                { year: "Ausbildung", text: "Medical Park St Hubertus Bad Wiessee, Kardiologische Rehabilitation (Dr. Hamann)" },
+                { year: "2007", text: "Abschluss Medizinstudium in Hamburg" }
+            ],
+            membershipsTitle: "Mitgliedschaften",
+            membershipItems: [
+                "Berufsverband Österreichische Internisten",
+                "Österreichische Gesellschaft für Innere Medizin",
+                "Österreichische Gesellschaft für Hypertensiologie"
+            ],
+            trainingTitle: "Fortbildungen & Diplome",
+            trainingItems: [
+                "Fortbildungsdiplom der österreichischen Ärztekammer",
+                "Absolvierung von diversen Schrittmacher- und Echocardiographie-Kursen",
+                "Regelmäßige Teilnahme an Fortbildungen und Kongressen",
+                "Carotissonographie Grundkurs und Abschlusskurs"
+            ],
+            internationalTitle: "Ausland & Sprachen",
+            internationalItems: [
+                "2006 Australien: The Nepean Hospital, Penrith (Auslandsaufenthalt)",
+                "Fremdsprachen: Englisch"
             ],
             philosophyTitle: "Meine Philosophie",
-            philosophyText: "Ich glaube an eine Medizin, die sich Zeit nimmt. Eine Medizin, die zuhört und den Menschen hinter den Befunden sieht. In meiner Ordination in Brand-Laaben schaffe ich einen Raum für Vertrauen und fachliche Exzellenz."
+            philosophyText: "Ich glaube an eine Medizin, die sich Zeit nimmt. Eine Medizin, die zuhört und den Menschen hinter den Befunden sieht. In meiner Ordination in Brand-Laaben schaffe ich einen Raum für Vertrauen und fachliche Expertise."
         },
         hero: {
             welcome: "Willkommen",
@@ -112,11 +140,11 @@ export const translations = {
                     image: "/services/cardiology.png",
                     content: [
                         "Eine präzise kardiologische Diagnostik ist der Grundstein für Ihre Herzgesundheit. In meiner Ordination nutze ich modernste Medizintechnik, um Funktionsstörungen frühzeitig zu erkennen und individuell zu behandeln.",
-                        "Vom klassischen EKG bis hin zum hochauflösenden Herzultraschall biete ich Ihnen das gesamte Spektrum der nicht-invasiven kardiologischen Abklärung.",
+                        "Vom klassischen EKG bis hin zum hochauflösenden Herzultraschall biete ich Ihnen das gesamte Spektrum der kardiologischen Abklärung.",
                     ],
                     details: [
-                        { name: "Echokardiographie (Herzultraschall)", desc: "Die Echokardiographie ist eine schonende und schmerzfreie Ultraschalluntersuchung des Herzens. Dabei werden Herzmuskel, Herzklappen und die Pumpfunktion in Echtzeit dargestellt. So lassen sich Durchblutungsstörungen, Klappenerkrankungen, Herzschwäche oder Strukturveränderungen frühzeitig erkennen. Der Herzultraschall ist ein zentrales Diagnoseverfahren in der Kardiologie – völlig strahlenfrei und jederzeit wiederholbar." },
-                        { name: "EKG (Elektrokardiogramm)", desc: "Das EKG ist eine einfache und schmerzfreie Untersuchung, bei der die elektrischen Aktivitäten des Herzens gemessen werden. Über kleine Elektroden auf der Haut können Herzrhythmus, Herzfrequenz und mögliche Durchblutungsstörungen beurteilt werden. So lassen sich Herzrhythmusstörungen, Herzinfarkte oder andere Veränderungen rasch und zuverlässig erkennen." },
+                        { name: "Herzultraschall (Echokardiographie)", desc: "Der Herzultraschall (Echokardiographie) gehört zur Basisdiagnostik des Herzens. Hierbei können die Herzhöhlen, die Pumpfunktion und die Herzklappen (Verengung, Undichtheit) beurteilt werden." },
+                        { name: "EKG (Elektrokardiogramm)", desc: "Das EKG (Elektrokardiogramm) zeichnet die elektrischen Ströme am Herzen auf. Mit Hilfe des EKGs kann man Rhythmusstörungen, Überleitungsverzögerungen oder Extraschläge nachweisen und man erhält Hinweise auf strukturelle Veränderungen oder Durchblutungsstörungen am Herzen." },
                         { name: "Langzeit-EKG", desc: "Beim Langzeit-EKG wird die elektrische Aktivität des Herzens über 24 bis 72 Stunden mittels eines kleinen, tragbaren Geräts aufgezeichnet. So können Herzrhythmus und mögliche Unregelmäßigkeiten im Alltag erfasst werden. Die Auswertung liefert wertvolle Hinweise auf Herzrhythmusstörungen, Herzrasen oder unklare Schwindel- und Ohnmachtsanfälle." },
                         { name: "Ergometrie", desc: "Belastungs-EKG zur Beurteilung der Leistungsfähigkeit und Durchblutung unter körperlicher Belastung." },
                     ]
@@ -170,7 +198,7 @@ export const translations = {
             label: "Information",
             title: "Ihre Vorteile in einer Wahlarztordination",
             quote: '"In meiner Wahlarztordination steht der Mensch im Mittelpunkt. Qualität braucht Zeit. Diese nehme ich mir für jedes Gespräch und jede Untersuchung."',
-            howTitle: "Wie funktioniert es?",
+            howTitle: "Wie funktioniert die Abrechnung?",
             howText: "Als Wahlarztordination verrechne ich direkt mit Ihnen. Es besteht die Möglichkeit der Barzahlung oder mit Bankomat-Karte. Ein Teil der Kosten wird – abhängig von Ihrer Krankenkasse – rückerstattet.",
             reimbursementTitle: "Kostenerstattung",
             reimbursementText: "Gerne unterstütze ich Sie bei der Einreichung Ihrer Honorarnote beim zuständigen Sozialversicherungsträger. In der Regel erstattet die Kasse einen Teil der Kosten zurück.",
@@ -261,25 +289,52 @@ export const translations = {
         about: {
             label: "Your Specialist",
             title: "Dr. Stephanie Sang",
+            personal: "Born 1979 in Munich",
             quote: '"In my practice, the individual is at the center. I take the time necessary for holistic care."',
             text1: "As a specialist in internal medicine and cardiology, I accompany you sensitively and competently in all questions regarding heart and vascular diseases as well as internal medical health prevention.",
             text2: "My goal is to provide you with comprehensive medical care – with sufficient time for your concerns, in a calm atmosphere and on the current state of medical knowledge.",
             qualificationsTitle: "Qualifications",
-
-            cvTitle: "Medical CV",
+            currentActivityTitle: "Current Activity",
+            currentActivityItems: [
+                "Senior Physician at Barmherzige Brüder Hospital Vienna, Internal Medicine I, Dept. of Gastroenterology, Nephrology and Cardiology (Prof. Ferlitsch) (currently on leave)",
+                "Senior Physician in functional diagnostics with echo laboratory and pacemaker outpatient clinic",
+                "Care of heart failure patients"
+            ],
+            cvTitle: "Professional Career",
             cvItems: [
                 { year: "Since 2024", text: "Independent private practice in Brand-Laaben" },
-                { year: "Since 2022", text: "Senior Physician for Internal Medicine & Cardiology" },
-                { year: "2016 – 2022", text: "Specialist training at KH Barmherzige Brüder" }
+                { year: "June 2022", text: "Foundation of the group practice „Ordination Josefstadt“" },
+                { year: "Sept 2020", text: "Private practice work in the group practice „Cardiology in Josefstadt“" },
+                { year: "Specialist", text: "Cardiology: 1st Medical Dept., Klinikum Donaustadt (Prof. Stefenelli)" },
+                { year: "2014", text: "Specialist Board Examination" }
             ],
-            expertiseTitle: "Expertise",
-            expertiseItems: [
-                "Cardiological functional diagnostics",
-                "Internal medicine check-ups",
-                "Holistic preventive medicine"
+            educationTitle: "Specialist Training & Studies",
+            educationItems: [
+                { year: "Training", text: "Dept. of Internal Medicine, Barmherzige Brüder Vienna (Prof. Meran)" },
+                { year: "Training", text: "Dept. of Cardiology, Pneumology, Internal Intensive Care, Klinikum München Schwabing (Prof. Sack)" },
+                { year: "Training", text: "Medical Park St Hubertus Bad Wiessee, Cardiological Rehabilitation (Dr. Hamann)" },
+                { year: "2007", text: "MD Degree, University of Hamburg" }
+            ],
+            membershipsTitle: "Memberships",
+            membershipItems: [
+                "Austrian Association of Internists",
+                "Austrian Society for Internal Medicine",
+                "Austrian Society for Hypertension"
+            ],
+            trainingTitle: "Training & Diplomas",
+            trainingItems: [
+                "Diploma of Continuing Medical Education (ÖÄK)",
+                "Completion of various pacemaker and echocardiography courses",
+                "Regular participation in advanced training and congresses",
+                "Carotid sonography basic and advanced courses"
+            ],
+            internationalTitle: "International & Languages",
+            internationalItems: [
+                "2006 Australia: The Nepean Hospital, Penrith (Medical Residency)",
+                "Languages: English"
             ],
             philosophyTitle: "My Philosophy",
-            philosophyText: "I believe in medicine that takes time. Medicine that listens and sees the person behind the findings. In my practice in Brand-Laaben, I create a space for trust and professional excellence."
+            philosophyText: "I believe in medicine that takes time. Medicine that listens and sees the person behind the findings. In my practice in Brand-Laaben, I create a space for trust and professional expertise."
         },
         hero: {
             welcome: "Welcome",
@@ -344,8 +399,8 @@ export const translations = {
                         "From classic ECG to high-resolution heart ultrasound, I offer you the entire spectrum of non-invasive cardiological evaluation.",
                     ],
                     details: [
-                        { name: "Echocardiography (Heart Ultrasound)", desc: "Echocardiography is a gentle and painless ultrasound examination of the heart. Cardiac muscle, heart valves and pump function are displayed in real time. This allows for early detection of circulatory disorders, valve diseases, heart failure or structural changes. Heart ultrasound is a central diagnostic procedure in cardiology – completely radiation-free and repeatable at any time." },
-                        { name: "ECG (Electrocardiogram)", desc: "The ECG is a simple and painless examination that measures the electrical activities of the heart. Heart rhythm, heart rate and possible circulatory disorders can be assessed via small electrodes on the skin. This allows heart rhythm disturbances, heart attacks or other changes to be recognized quickly and reliably." },
+                        { name: "Heart Ultrasound (Echocardiography)", desc: "Heart ultrasound (echocardiography) is a fundamental diagnostic tool for the heart. It allows for the assessment of heart chambers, pumping function, and heart valves (narrowing, leakage)." },
+                        { name: "ECG (Electrocardiogram)", desc: "The ECG (electrocardiogram) records the electrical currents of the heart. With the help of the ECG, rhythm disturbances, conduction delays, or extra beats can be detected, and it provides clues to structural changes or blood flow disturbances in the heart." },
                         { name: "Long-term ECG", desc: "In a long-term ECG, the electrical activity of the heart is recorded over 24 to 72 hours using a small, portable device. This allowing heart rhythm and possible irregularities to be captured in everyday life. The evaluation provides valuable clues to heart rhythm disturbances, racing heart or unclear episodes of dizziness and fainting." },
                         { name: "Ergometry", desc: "Stress ECG to assess performance and blood flow under physical stress." },
                     ]
@@ -399,7 +454,7 @@ export const translations = {
             label: "Information",
             title: "Your advantages in a private practice",
             quote: '"In my private practice, the focus is on the individual. Quality needs time. I take this time for every conversation and every examination."',
-            howTitle: "How does it work?",
+            howTitle: "How does billing work?",
             howText: "As a private practice, I bill you directly. Payment can be made in cash or by debit card. A part of the costs will be reimbursed – depending on your health insurance.",
             reimbursementTitle: "Reimbursement",
             reimbursementText: "I am happy to support you with the submission of your medical fee note to the responsible social security provider. Usually, the insurance reimburses a part of the costs.",

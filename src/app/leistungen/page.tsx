@@ -8,24 +8,28 @@ export default function ServicesPage() {
 
     const serviceCategories = [
         {
-            ...t.services.items.kardiologie,
-            slug: "kardiologie",
-            list: t.services.items.kardiologie.details.slice(0, 3).map((d: any) => d.name)
+            title: "EKG",
+            description: t.services.items.kardiologie.details[1].desc,
+            image: "/services/cardiology.png",
+            slug: "kardiologie#ekg-elektrokardiogramm"
         },
         {
-            ...t.services.items.gefaessmedizin,
-            slug: "gefaessmedizin",
-            list: t.services.items.gefaessmedizin.details.map((d: any) => d.name)
+            title: "Herzultraschall",
+            description: t.services.items.kardiologie.details[0].desc,
+            image: "/services/vascular.png",
+            slug: "kardiologie#herzultraschall-echokardiographie"
         },
         {
-            ...t.services.items.diagnostik,
-            slug: "diagnostik",
-            list: t.services.items.diagnostik.details.slice(0, 3).map((d: any) => d.name)
+            title: t.services.items.gefaessmedizin.title,
+            description: t.services.items.gefaessmedizin.content[0],
+            image: "/services/vascular.png",
+            slug: "gefaessmedizin"
         },
         {
-            ...t.services.items["covid-nachsorge"],
-            slug: "covid-nachsorge",
-            list: t.services.items["covid-nachsorge"].details.map((d: any) => d.name)
+            title: t.services.items.diagnostik.title,
+            description: t.services.items.diagnostik.content[0],
+            image: "/services/diagnostics.png",
+            slug: "diagnostik"
         }
     ];
 
@@ -43,40 +47,33 @@ export default function ServicesPage() {
                     <div className="w-12 h-[1px] bg-primary/30 mx-auto mt-12"></div>
                 </header>
 
-                <div className="grid grid-cols-1 gap-40">
-                    {serviceCategories.map((category, index) => (
-                        <section
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
+                    {serviceCategories.map((category) => (
+                        <Link
                             key={category.slug}
-                            className={`flex flex-col lg:flex-row gap-20 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
+                            href={`/leistungen/${category.slug}`}
+                            className="group flex flex-col bg-white overflow-hidden shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] transition-all duration-700 h-full"
                         >
-                            <div className="w-full lg:w-1/2 aspect-[16/10] bg-slate-100 rounded-sm overflow-hidden border border-black/[0.03] shadow-xl group">
+                            <div className="aspect-[16/10] overflow-hidden bg-slate-100">
                                 <img
                                     src={category.image}
                                     alt={category.title}
                                     className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-[2000ms] group-hover:scale-105"
                                 />
                             </div>
-                            <div className="w-full lg:w-1/2">
-                                <h2 className="font-display text-4xl mb-8">{category.title}</h2>
-                                <p className="text-slate-600 font-light leading-relaxed mb-10 text-lg">
-                                    {category.content[0]}
+                            <div className="p-10 md:p-12 flex flex-col flex-grow">
+                                <h2 className="font-display text-2xl md:text-3xl mb-4 tracking-[0.05em] text-slate-400 group-hover:text-primary transition-colors">
+                                    {category.title}
+                                </h2>
+                                <p className="text-slate-500 font-light leading-relaxed mb-10 text-base line-clamp-4 flex-grow">
+                                    {category.description}
                                 </p>
-                                <ul className="space-y-4 mb-12">
-                                    {category.list.map((item: string, i: number) => (
-                                        <li key={i} className="flex items-center gap-4 text-sm text-slate-500 font-light group">
-                                            <span className="w-1.5 h-1.5 rounded-full bg-primary/20 group-hover:bg-primary transition-colors"></span>
-                                            {item}
-                                        </li>
-                                    ))}
-                                </ul>
-                                <Link
-                                    href={`/leistungen/${category.slug}`}
-                                    className="bg-primary text-white text-[10px] uppercase tracking-[0.2em] font-bold px-10 py-5 rounded-none hover:bg-slate-900 transition-all shadow-lg active:scale-95 inline-block"
-                                >
+                                <div className="flex items-center gap-3 text-primary text-[9px] uppercase tracking-[0.3em] font-bold mt-auto group-hover:gap-4 transition-all">
                                     {t.services.cta}
-                                </Link>
+                                    <span className="material-symbols-outlined text-[12px]">arrow_forward</span>
+                                </div>
                             </div>
-                        </section>
+                        </Link>
                     ))}
                 </div>
             </div>
