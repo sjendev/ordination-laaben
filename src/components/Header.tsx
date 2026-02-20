@@ -7,14 +7,11 @@ import { BOOKING_LINK } from "@/config/links";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
-    const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
     const { language, setLanguage, t } = useLanguage();
 
     return (
         <header
             className="fixed top-0 left-0 w-full z-50 px-6 py-6 flex justify-between items-center bg-[#F5F6F0]/80 backdrop-blur-md border-b border-black/[0.05]"
-            onMouseLeave={() => setIsMegaMenuOpen(false)}
         >
             <div className="flex-1 lg:flex-none">
                 <Link href="/" className="flex items-center group">
@@ -30,87 +27,27 @@ export default function Header() {
                 <Link
                     href="/ueber-mich"
                     className="hover:text-primary transition-colors"
-                    onMouseEnter={() => setIsMegaMenuOpen(false)}
                 >
                     {t.nav.about}
                 </Link>
 
-                <div
-                    className="relative py-2"
-                    onMouseEnter={() => setIsMegaMenuOpen(true)}
+                <Link
+                    href="/leistungen"
+                    className="hover:text-primary transition-colors"
                 >
-                    <Link href="/leistungen" className="hover:text-primary transition-colors flex items-center gap-1 group">
-                        {t.nav.services}
-                        <span className={`material-symbols-outlined text-[14px] transition-transform duration-300 ${isMegaMenuOpen ? 'rotate-180' : ''}`}>
-                            expand_more
-                        </span>
-                    </Link>
-
-                    {/* Full-Width Mega Menu Dropdown */}
-                    <div className={`fixed top-full left-0 w-full bg-[#F5F6F0] border-y border-black/[0.05] shadow-2xl transition-all duration-500 origin-top overflow-hidden ${isMegaMenuOpen ? 'opacity-100 translate-y-0 visible pointer-events-auto' : 'opacity-0 -translate-y-4 invisible pointer-events-none'}`}>
-                        <div className="max-w-6xl mx-auto px-8 py-12">
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-                                {t.nav.subServices?.map((service: any, index: number) => (
-                                    <Link
-                                        key={index}
-                                        href={service.link}
-                                        className="group/item flex flex-col gap-4"
-                                        onClick={() => setIsMegaMenuOpen(false)}
-                                    >
-                                        <div className="aspect-[16/10] overflow-hidden bg-black/[0.05] border border-black/[0.05] relative">
-                                            <img
-                                                src={service.image}
-                                                alt={service.title}
-                                                className="w-full h-full object-cover transition-transform duration-700 group-hover/item:scale-110 opacity-80 group-hover/item:opacity-100"
-                                            />
-                                            <div className="absolute inset-0 bg-primary/0 group-hover/item:bg-primary/5 transition-colors duration-500"></div>
-                                        </div>
-                                        <div>
-                                            <h4 className="text-[14px] font-display font-medium mb-1 group-hover/item:text-primary transition-colors">
-                                                {service.title}
-                                            </h4>
-                                            <p className="text-[11px] text-slate-400 font-light lowercase tracking-wider leading-relaxed">
-                                                {service.description}
-                                            </p>
-                                        </div>
-                                    </Link>
-                                ))}
-
-                                <div className="bg-black/[0.02] p-8 flex flex-col justify-between border border-black/[0.03]">
-                                    <div>
-                                        <p className="text-[10px] text-primary font-bold tracking-[0.3em] mb-4 uppercase">
-                                            {t.nav.cta}
-                                        </p>
-                                        <p className="text-[12px] text-slate-500 font-light leading-relaxed mb-8">
-                                            {t.nav.bookingIntro}
-                                        </p>
-                                    </div>
-                                    <a
-                                        href={BOOKING_LINK}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="bg-primary text-white text-[9px] font-bold uppercase tracking-widest py-4 px-8 text-center hover:bg-slate-900 transition-all shadow-sm"
-                                        onClick={() => setIsMegaMenuOpen(false)}
-                                    >
-                                        {t.nav.cta}
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    {t.nav.services}
+                </Link>
 
                 <Link
                     href="/wahlarzt"
                     className="hover:text-primary transition-colors"
-                    onMouseEnter={() => setIsMegaMenuOpen(false)}
                 >
                     {t.nav.wahlarzt}
                 </Link>
+
                 <Link
                     href="/kontakt"
                     className="hover:text-primary transition-colors"
-                    onMouseEnter={() => setIsMegaMenuOpen(false)}
                 >
                     {t.nav.contact}
                 </Link>
@@ -118,10 +55,7 @@ export default function Header() {
 
             <div className="flex-1 lg:flex-none flex justify-end items-center gap-4">
                 {/* Language Toggle */}
-                <div
-                    className="flex items-center bg-slate-50 p-1 border border-slate-100 mr-2 shadow-sm"
-                    onMouseEnter={() => setIsMegaMenuOpen(false)}
-                >
+                <div className="flex items-center bg-slate-50 p-1 border border-slate-100 mr-2 shadow-sm">
                     <button
                         onClick={() => setLanguage("de")}
                         className={`px-3 py-1.5 text-[9px] font-bold uppercase tracking-wider transition-all duration-300 ${language === 'de' ? 'bg-white shadow-sm text-primary' : 'text-slate-400 hover:text-slate-600'}`}
@@ -141,7 +75,6 @@ export default function Header() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hidden md:block bg-primary text-white text-[10px] uppercase tracking-[0.2em] font-bold px-8 py-4 rounded-none hover:bg-slate-900 transition-colors shadow-sm"
-                    onMouseEnter={() => setIsMegaMenuOpen(false)}
                 >
                     {t.nav.cta}
                 </a>
@@ -162,37 +95,7 @@ export default function Header() {
                     <nav className="flex flex-col gap-6 text-xs uppercase tracking-widest font-medium text-center">
                         <Link href="/ueber-mich" onClick={() => setIsMenuOpen(false)}>{t.nav.about}</Link>
 
-                        <div className="flex flex-col gap-4">
-                            <button
-                                onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
-                                className="flex items-center justify-center gap-2 group mx-auto"
-                            >
-                                {t.nav.services}
-                                <span className={`material-symbols-outlined text-sm transition-transform duration-300 ${isMobileServicesOpen ? 'rotate-180' : ''}`}>
-                                    expand_more
-                                </span>
-                            </button>
-
-                            <div className={`flex flex-col gap-4 overflow-hidden transition-all duration-500 ease-in-out ${isMobileServicesOpen ? 'max-h-screen opacity-100 mt-2' : 'max-h-0 opacity-0'}`}>
-                                {t.nav.subServices?.map((service: any, index: number) => (
-                                    <Link
-                                        key={index}
-                                        href={service.link}
-                                        onClick={() => setIsMenuOpen(false)}
-                                        className="text-[10px] text-slate-500 hover:text-primary transition-colors py-2 border-b border-black/[0.03] mx-10"
-                                    >
-                                        {service.title}
-                                    </Link>
-                                ))}
-                                <Link
-                                    href="/leistungen"
-                                    onClick={() => setIsMenuOpen(false)}
-                                    className="text-[9px] font-bold text-primary mt-2"
-                                >
-                                    {t.nav.viewAll}
-                                </Link>
-                            </div>
-                        </div>
+                        <Link href="/leistungen" onClick={() => setIsMenuOpen(false)}>{t.nav.services}</Link>
 
                         <Link href="/wahlarzt" onClick={() => setIsMenuOpen(false)}>{t.nav.wahlarzt}</Link>
                         <Link href="/kontakt" onClick={() => setIsMenuOpen(false)}>{t.nav.contact}</Link>
