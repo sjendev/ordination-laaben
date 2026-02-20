@@ -86,6 +86,8 @@ export const translations = {
             phone: "Telefon",
             hours: "Öffnungszeiten",
             hoursValue: "Termine nach Vereinbarung",
+            secondPracticeLabel: "Zweitordination Wien",
+            secondPracticeValue: "https://www.ordination-josefstadt.at/",
         },
         home: {
             welcome: "Willkommen",
@@ -127,28 +129,15 @@ export const translations = {
                     subtitle: "Herz- & Kreislaufdiagnostik",
                     image: "/services/cardiology.png",
                     content: [
-                        "Eine präzise kardiologische Diagnostik ist der Grundstein für Ihre Herzgesundheit. In meiner Ordination nutze ich modernste Medizintechnik, um Funktionsstörungen frühzeitig zu erkennen und individuell zu behandeln.",
-                        "Vom klassischen EKG bis hin zum hochauflösenden Herzultraschall biete ich Ihnen das gesamte Spektrum der kardiologischen Abklärung.",
+                        "Als Fachärztin für Innere Medizin und Kardiologie begleite ich Sie einfühlsam und kompetent in allen Fragen rund um Herz- und Gefäßerkrankungen sowie internistische Gesundheitsvorsorge.",
+                        "Abklärung von Herzbeschwerden (z. B. Brustschmerz, Luftnot, Herzstolpern). Betreuung bei Herzschwäche und Rhythmusstörungen. Kardiologische Vorsorgeuntersuchungen.",
+                        "Modernste Untersuchungsmethoden und eine sorgfältige Befundinterpretation sind dabei selbstverständlich."
                     ],
                     details: [
-                        { name: "Herzultraschall (Echokardiographie)", desc: "Der Herzultraschall (Echokardiographie) gehört zur Basisdiagnostik des Herzens. Hierbei können die Herzhöhlen, die Pumpfunktion und die Herzklappen (Verengung, Undichtheit) beurteilt werden." },
-                        { name: "EKG (Elektrokardiogramm)", desc: "Das EKG (Elektrokardiogramm) zeichnet die elektrischen Ströme am Herzen auf. Mit Hilfe des EKGs kann man Rhythmusstörungen, Überleitungsverzögerungen oder Extraschläge nachweisen und man erhält Hinweise auf strukturelle Veränderungen oder Durchblutungsstörungen am Herzen." },
-                        { name: "Langzeit-EKG", desc: "Beim Langzeit-EKG wird die elektrische Aktivität des Herzens über 24 bis 72 Stunden mittels eines kleinen, tragbaren Geräts aufgezeichnet. So können Herzrhythmus und mögliche Unregelmäßigkeiten im Alltag erfasst werden. Die Auswertung liefert wertvolle Hinweise auf Herzrhythmusstörungen, Herzrasen oder unklare Schwindel- und Ohnmachtsanfälle." },
-                        { name: "Ergometrie", desc: "Belastungs-EKG zur Beurteilung der Leistungsfähigkeit und Durchblutung unter körperlicher Belastung." },
-                    ]
-                },
-                gefaessmedizin: {
-                    title: "Gefäßmedizin",
-                    subtitle: "Prävention & Ultraschall",
-                    image: "/services/vascular.png",
-                    content: [
-                        "Gesunde Gefäße sind lebenswichtig. Mein Fokus liegt auf der Früherkennung von Arterienverkalkungen (Atherosklerose), um Schlaganfälle und Durchblutungsstörungen effektiv zu verhindern.",
-                        "Mittels farbkodierter Duplex-Sonographie kann ich Ihre Gefäße schmerzfrei und ohne Strahlenbelastung visualisieren und beurteilen.",
-                    ],
-                    details: [
-                        { name: "Carotis-Ultraschall", desc: "Der Carotis-Ultraschall ist eine schmerzfreie Untersuchung der Halsschlagadern. Dabei können Ablagerungen (Plaques), Gefäßverengungen oder Durchblutungsstörungen frühzeitig erkannt werden. Durch die genaue Beurteilung des Gefäßzustands lässt sich Ihr individuelles Schlaganfallrisiko besser einschätzen." },
-                        { name: "pAVK-Abklärung", desc: "Untersuchung der Beingefäße bei Verdacht auf Durchblutungsstörungen ('Schaufensterkrankheit')." },
-                        { name: "Aorta-Screening", desc: "Vorsorgeuntersuchung zur Früherkennung von Aneurysmen (Gefäßerweiterungen) mittels Ultraschall." },
+                        { name: "Echokardiographie (Herzultraschall)", desc: "Die Echokardiographie ist eine schonende und schmerzfreie Ultraschalluntersuchung des Herzens. Dabei werden Herzmuskel, Herzklappen und die Pumpfunktion in Echtzeit dargestellt. So lassen sich Durchblutungsstörungen, Klappenerkrankungen, Herzschwäche oder Strukturveränderungen frühzeitig erkennen. Der Herzultraschall ist ein zentrales Diagnoseverfahren in der Kardiologie – völlig strahlenfrei und jederzeit wiederholbar. Die Ergebnisse werden im Anschluss ausführlich mit Ihnen besprochen, um gemeinsam die bestmögliche Behandlung zu planen." },
+                        { name: "EKG (Elektrokardiogramm)", desc: "Das EKG ist eine einfache und schmerzfreie Untersuchung, bei der die elektrischen Aktivitäten des Herzens gemessen werden. Über kleine Elektroden auf der Haut können Herzrhythmus, Herzfrequenz und mögliche Durchblutungsstörungen beurteilt werden. So lassen sich Herzrhythmusstörungen, Herzinfarkte oder andere Veränderungen rasch und zuverlässig erkennen. Das EKG dauert nur wenige Minuten und liefert wertvolle Informationen für die weitere kardiologische Abklärung und Behandlung." },
+                        { name: "Langzeit-EKG", desc: "Beim Langzeit-EKG wird die elektrische Aktivität des Herzens über 24 bis 72 Stunden mittels eines kleinen, tragbaren Geräts aufgezeichnet. So können Herzrhythmus und mögliche Unregelmäßigkeiten im Alltag erfasst werden – auch dann, wenn Beschwerden nur zeitweise auftreten. Die Auswertung liefert wertvolle Hinweise auf Herzrhythmusstörungen, Herzrasen, Pausen im Herzschlag oder unklare Schwindel- und Ohnmachtsanfälle. Die Untersuchung ist schmerzfrei, alltagstauglich und ermöglicht eine besonders genaue Beurteilung des Herzrhythmus." },
+                        { name: "Carotis-Ultraschall (Halsschlagader-Sonographie)", desc: "Der Carotis-Ultraschall ist eine schmerzfreie Untersuchung der Halsschlagadern mittels Ultraschall. Dabei können Ablagerungen (Plaques), Gefäßverengungen oder Durchblutungsstörungen frühzeitig erkannt werden. Diese Untersuchung ist besonders wichtig bei Bluthochdruck, Diabetes, Rauchen, erhöhten Blutfetten oder nach Schlaganfallereignissen. Durch die genaue Beurteilung des Gefäßzustands lässt sich Ihr individuelles Schlaganfallrisiko besser einschätzen – völlig strahlenfrei und schonend." }
                     ]
                 },
                 diagnostik: {
@@ -156,28 +145,15 @@ export const translations = {
                     subtitle: "Umfassende Diagnostik",
                     image: "/services/diagnostics.png",
                     content: [
-                        "Die Innere Medizin ist das Fundament der fächerübergreifenden Diagnostik. Ich koordiniere Ihre Befunde und biete Ihnen eine ganzheitliche internistische Betreuung.",
-                        "Besonders vor geplanten Operationen (OP-Clearance) oder im Rahmen der jährlichen Vorsorgeuntersuchung bin ich Ihre kompetente Ansprechpartnerin.",
+                        "In meiner Praxis setzen wir auf eine ruhige Atmosphäre und ausführliche Beratung. So können wir gemeinsam die beste Lösung für Ihre Gesundheit finden.",
+                        "Bluthochdruckdiagnostik und -therapie. Internistische Ganzkörperdiagnostik. Risikoeinschätzung & Prävention. Nachsorge nach Spitalsaufenthalten.",
+                        "Modernste Untersuchungsmethoden und eine sorgfältige Befundinterpretation sind dabei selbstverständlich."
                     ],
                     details: [
-                        { name: "OP-Freigaben", desc: "Umfassende präoperative Untersuchung inkl. EKG und Laborfreigabe für Ihre Sicherheit." },
-                        { name: "Spirometrie", desc: "Die Spirometrie ist ein Lungenfunktionstest, mit dem gemessen wird, wie viel Luft eine Person ein- und ausatmen kann und wie schnell das geschieht. Sie wird eingesetzt, um Atemwegserkrankungen wie Asthma oder COPD zu erkennen. Der Test ist schmerzfrei und erfolgt durch kräftiges Atmen in ein Messgerät." },
-                        { name: "Langzeit-Blutdruckmessung", desc: "Hierbei wird Ihr Blutdruck über 24 Stunden regelmäßig aufgezeichnet. So lassen sich natürliche Schwankungen im Tages- und Nachtverlauf erfassen und ein genaues Bild Ihrer Blutdrucksituation gewinnen – wichtig für die sichere Diagnose und optimale Therapie." },
-                        { name: "Laboranalysen", desc: "Umfassende Blutuntersuchungen in Kooperation mit Fachlaboren für eine präzise Diagnostik." },
-                    ]
-                },
-                "covid-nachsorge": {
-                    title: "COVID Nachsorge",
-                    subtitle: "Regeneration & Support",
-                    image: "/services/covid-aftercare.png",
-                    content: [
-                        "Viele Patientinnen und Patienten leiden nach einer COVID-19-Infektion unter langanhaltenden Beschwerden wie Atemnot, Herzrasen oder ausgeprägter Erschöpfung (Fatigue).",
-                        "Ich biete Ihnen eine spezialisierte kardiologische und internistische Abklärung, um organische Ursachen auszuschließen und Ihren Weg zurück in den Alltag zu unterstützen.",
-                    ],
-                    details: [
-                        { name: "Kardiale Abklärung", desc: "Ausschluss von Herzmuskelentzündungen (Myokarditis) nach Infektion." },
-                        { name: "Belastungs-Check", desc: "Einschätzung der körperlichen Belastbarkeit mittels Ergometrie." },
-                        { name: "Ganzheitliche Beratung", desc: "Begleitung bei Fatigue-Symptomatik und Atemtraining." },
+                        { name: "Langzeit-Blutdruckmessung", desc: "Bei der Langzeit-Blutdruckmessung wird Ihr Blutdruck über 24 Stunden regelmäßig mithilfe eines tragbaren Messgeräts aufgezeichnet. So lassen sich natürliche Schwankungen im Tages- und Nachtverlauf erfassen und ein möglichst genaues Bild Ihrer Blutdrucksituation gewinnen. Die Untersuchung ist unkompliziert und hilft, Bluthochdruck sicher zu diagnostizieren, die Wirksamkeit einer Therapie zu überprüfen und individuelle Risikofaktoren besser einzuschätzen." },
+                        { name: "Spirometrie (Lungenfunktionstest)", desc: "Die Spirometrie ist ein Lungenfunktionstest, mit dem gemessen wird, wie viel Luft eine Person ein- und ausatmen kann und wie schnell das geschieht. Sie wird häufig eingesetzt, um Atemwegserkrankungen wie Asthma oder COPD zu erkennen, zu beurteilen oder zu kontrollieren. Der Test ist schmerzfrei, dauert nur wenige Minuten und erfolgt durch kräftiges Atmen in ein spezielles Messgerät." },
+                        { name: "OP- Freigaben", desc: "OP- Freigaben." },
+                        { name: "COVID Nachsorge", desc: "COVID Nachsorge." }
                     ]
                 }
             }
@@ -330,6 +306,8 @@ export const translations = {
             phone: "Phone",
             hours: "Hours",
             hoursValue: "By appointment",
+            secondPracticeLabel: "Private Practice Vienna",
+            secondPracticeValue: "https://www.ordination-josefstadt.at/",
         },
         home: {
             welcome: "Welcome",
@@ -371,28 +349,15 @@ export const translations = {
                     subtitle: "Heart & Circulatory Diagnostics",
                     image: "/services/cardiology.png",
                     content: [
-                        "Precise cardiological diagnostics is the foundation for your heart health. In my practice, I use the latest medical technology to detect functional disorders early and treat them individually.",
-                        "From classic ECG to high-resolution heart ultrasound, I offer you the entire spectrum of non-invasive cardiological evaluation.",
+                        "As a specialist in internal medicine and cardiology, I accompany you sensitively and competently in all questions regarding heart and vascular diseases.",
+                        "Clarification of heart complaints (e.g. chest pain, shortness of breath, palpitation), Care for heart failure and rhythm disturbances, Cardiological preventive examinations.",
+                        "State-of-the-art examination methods and careful interpretation of findings are a matter of course."
                     ],
                     details: [
-                        { name: "Heart Ultrasound (Echocardiography)", desc: "Heart ultrasound (echocardiography) is a fundamental diagnostic tool for the heart. It allows for the assessment of heart chambers, pumping function, and heart valves (narrowing, leakage)." },
-                        { name: "ECG (Electrocardiogram)", desc: "The ECG (electrocardiogram) records the electrical currents of the heart. With the help of the ECG, rhythm disturbances, conduction delays, or extra beats can be detected, and it provides clues to structural changes or blood flow disturbances in the heart." },
-                        { name: "Long-term ECG", desc: "In a long-term ECG, the electrical activity of the heart is recorded over 24 to 72 hours using a small, portable device. This allows heart rhythm and possible irregularities to be captured in everyday life. The evaluation provides valuable clues to heart rhythm disturbances, racing heart or unclear episodes of dizziness and fainting." },
-                        { name: "Ergometry", desc: "Stress ECG to assess performance and blood flow under physical stress." },
-                    ]
-                },
-                gefaessmedizin: {
-                    title: "Vascular Medicine",
-                    subtitle: "Prevention & Ultrasound",
-                    image: "/services/vascular.png",
-                    content: [
-                        "Healthy vessels are essential. My focus is on early detection of arterial calcification (atherosclerosis) to effectively prevent strokes and circulatory disorders.",
-                        "Using color-coded duplex sonography, I can visualize and evaluate your vessels painlessly and without radiation exposure.",
-                    ],
-                    details: [
-                        { name: "Carotid Ultrasound", desc: "Carotid ultrasound is a painless examination of the carotid arteries. Deposits (plaques), vascular constrictions or circulatory disorders can be detected early. Through the precise assessment of the vascular state, your individual stroke risk can be better estimated." },
-                        { name: "Arterial Status", desc: "Examination of leg vessels when circulatory disorders ('window-shopping disease') are suspected." },
-                        { name: "Aorta Screening", desc: "Preventive examination for early detection of aneurysms (vascular dilations) using ultrasound." },
+                        { name: "Echocardiography (Heart Ultrasound)", desc: "Echocardiography is a gentle and painless ultrasound examination of the heart. The heart muscle, heart valves, and pumping function are displayed in real time, allowing circulatory disorders, valve diseases, heart failure, or structural changes to be detected early. Heart ultrasound is a central diagnostic procedure in cardiology – completely radiation-free and repeatable at any time. The results will be discussed in detail with you afterwards to plan the best possible treatment together." },
+                        { name: "ECG (Electrocardiogram)", desc: "An ECG is a simple, painless test measuring the electrical activity of the heart. Small electrodes on the skin help assess heart rhythm, frequency, and potential circulatory issues, enabling quick and reliable detection of arrhythmias, heart attacks, or other changes. The test takes only a few minutes and provides valuable information for further cardiological diagnosis and treatment." },
+                        { name: "Long-term ECG", desc: "In a long-term ECG, the heart's electrical activity is recorded over 24 to 72 hours using a small, portable device. This detects heart rhythm and possible irregularities in everyday life, even when symptoms only occur occasionally. The evaluation provides valuable clues to arrhythmias, racing hearts, pauses in heartbeat, or unclear dizziness and fainting spells. The examination is painless, suitable for daily life, and enables particularly precise assessment." },
+                        { name: "Carotid Ultrasound (Carotid Sonography)", desc: "Carotid ultrasound is a painless examination of the carotid arteries using ultrasound. Deposits (plaques), vascular constrictions, or circulatory disorders can be detected early. This examination is especially important for high blood pressure, diabetes, smoking, elevated blood lipids, or after strokes. A precise assessment of the vascular condition helps to better evaluate your individual stroke risk – completely radiation-free and gentle." }
                     ]
                 },
                 diagnostik: {
@@ -400,28 +365,15 @@ export const translations = {
                     subtitle: "Comprehensive Diagnostics",
                     image: "/services/diagnostics.png",
                     content: [
-                        "Internal medicine is the foundation of interdisciplinary diagnostics. I coordinate your findings and offer you holistic internal medical care.",
-                        "Especially before planned operations (OP clearance) or within the framework of the annual check-up, I am your competent partner.",
+                        "In my practice, we focus on a calm atmosphere and extensive consultation. Thus, we can together find the best solution for your health.",
+                        "High blood pressure diagnostics and therapy. Internal full-body diagnostics. Risk assessment & prevention. Aftercare following hospital stays.",
+                        "State-of-the-art examination methods and careful interpretation of findings are a matter of course."
                     ],
                     details: [
-                        { name: "OP Clearances", desc: "Comprehensive preoperative examination including ECG and lab clearance for your safety." },
-                        { name: "Spirometry", desc: "Spirometry is a lung function test that measures how much air a person can inhale and exhale and how fast that happens. It is used to detect respiratory diseases such as asthma or COPD. The test is painless and involves breathing forcefully into a measuring device." },
-                        { name: "Long-term Blood Pressure", desc: "Here, your blood pressure is recorded regularly over 24 hours. This allows natural fluctuations throughout the day and night to be captured and a precise picture of your blood pressure situation to be gained – important for reliable diagnosis and optimal therapy." },
-                        { name: "Lab Analysis", desc: "Comprehensive blood tests in cooperation with specialist labs for precise diagnostics." },
-                    ]
-                },
-                "covid-nachsorge": {
-                    title: "COVID Aftercare",
-                    subtitle: "Regeneration & Support",
-                    image: "/services/covid-aftercare.png",
-                    content: [
-                        "Many patients suffer from long-lasting complaints after a COVID-19 infection, such as shortness of breath, palpitations, or pronounced exhaustion (fatigue).",
-                        "I offer you specialized cardiological and internal medical evaluation to exclude organic causes and support your way back into everyday life.",
-                    ],
-                    details: [
-                        { name: "Cardiac Evaluation", desc: "Exclusion of heart muscle inflammation (myocarditis) after infection." },
-                        { name: "Exertion Check", desc: "Assessment of physical load capacity using ergometry." },
-                        { name: "Holistic Consulting", desc: "Support for fatigue symptoms and breathing training." },
+                        { name: "Long-term Blood Pressure", desc: "In long-term blood pressure measurement, your blood pressure is regularly recorded over 24 hours using a portable device. This captures natural fluctuations during the day and night to obtain the most accurate picture of your situation. The examination is uncomplicated and helps to reliably diagnose high blood pressure, check the effectiveness of a therapy, and better assess individual risk factors." },
+                        { name: "Spirometry (Lung Function Test)", desc: "Spirometry is a lung function test measuring how much air a person can inhale and exhale and how quickly this occurs. It is often used to detect, assess, or control respiratory diseases like asthma or COPD. The test is painless, takes only a few minutes, and involves breathing forcefully into a specialized measuring device." },
+                        { name: "OP- Clearances", desc: "OP- Clearances." },
+                        { name: "COVID Aftercare", desc: "COVID Aftercare." }
                     ]
                 }
             }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/context/LanguageContext";
+import Link from "next/link";
 
 export default function InfoBar() {
     const { t } = useLanguage();
@@ -21,21 +22,40 @@ export default function InfoBar() {
             label: t.infobar.hours,
             value: t.infobar.hoursValue,
         },
+        {
+            icon: "language",
+            label: t.infobar.secondPracticeLabel,
+            value: t.infobar.secondPracticeValue,
+            link: "https://www.ordination-josefstadt.at/",
+        },
     ];
 
     return (
         <div className="bg-[#F5F6F0]/50 border-y border-black/[0.05] py-8 px-6 backdrop-blur-sm">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {infoItems.map((item, index) => (
                     <div key={index} className="flex items-center gap-4 group">
-                        <div className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-primary/70 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <div className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-primary/70 group-hover:bg-primary group-hover:text-white transition-colors flex-shrink-0">
                             <span className="material-symbols-outlined text-lg">{item.icon}</span>
                         </div>
-                        <div>
-                            <p className="text-[9px] uppercase tracking-widest text-slate-400 font-medium">
-                                {item.label}
-                            </p>
-                            <p className="text-xs text-slate-700 font-light">{item.value}</p>
+                        <div className="flex flex-col justify-center">
+                            {item.label && !item.link && (
+                                <p className="text-[9px] uppercase tracking-widest text-slate-400 font-medium">
+                                    {item.label}
+                                </p>
+                            )}
+                            {item.link ? (
+                                <Link
+                                    href={item.link}
+                                    target="_blank"
+                                    className="text-xs text-primary font-medium hover:underline flex items-center gap-1"
+                                >
+                                    {item.value}
+                                    <span className="material-symbols-outlined text-[10px]">open_in_new</span>
+                                </Link>
+                            ) : (
+                                <p className="text-xs text-slate-700 font-light">{item.value}</p>
+                            )}
                         </div>
                     </div>
                 ))}
