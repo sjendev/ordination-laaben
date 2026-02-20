@@ -54,7 +54,7 @@ export default function ContactPage() {
 
                 <div className="relative h-[500px] w-full bg-black/[0.03] border border-black/[0.05] rounded-sm overflow-hidden grayscale hover:grayscale-0 transition-all duration-1000 group">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10660.123456789!2d15.8!3d48.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476da381f9b3b5e7%3A0x40097572de611f0!2s3053%20Brand-Laaben!5e0!3m2!1sde!2sat!4v1234567890"
+                        src="https://maps.google.com/maps?q=Laaben+33/40,+3053+Brand-Laaben&t=&z=15&ie=UTF8&iwloc=&output=embed"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}
