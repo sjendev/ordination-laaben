@@ -14,7 +14,7 @@ export const translations = {
                     title: "Kardiologie",
                     description: "EKG, Ultraschall & Herzdiagnostik",
                     link: "/leistungen/kardiologie",
-                    image: "/services/cardiology.png"
+                    image: "/services/cardiology.jpg"
                 },
                 {
                     title: "Innere Medizin",
@@ -104,7 +104,7 @@ export const translations = {
                 {
                     title: "Kardiologie",
                     description: "EKG, Herzultraschall und umfassende Herzdiagnostik für Ihre Sicherheit.",
-                    image: "/services/cardiology.png",
+                    image: "/services/cardiology.jpg",
                     link: "/leistungen/kardiologie"
                 },
                 {
@@ -127,7 +127,7 @@ export const translations = {
                 kardiologie: {
                     title: "Kardiologie",
                     subtitle: "Herz- & Kreislaufdiagnostik",
-                    image: "/services/cardiology.png",
+                    image: "/services/cardiology.jpg",
                     content: [
                         "Als Fachärztin für Innere Medizin und Kardiologie begleite ich Sie einfühlsam und kompetent in allen Fragen rund um Herz- und Gefäßerkrankungen sowie internistische Gesundheitsvorsorge.",
                         "Abklärung von Herzbeschwerden (z. B. Brustschmerz, Luftnot, Herzstolpern). Betreuung bei Herzschwäche und Rhythmusstörungen. Kardiologische Vorsorgeuntersuchungen.",
@@ -234,7 +234,7 @@ export const translations = {
                     title: "Cardiology",
                     description: "ECG, Ultrasound & Heart Diagnostics",
                     link: "/leistungen/kardiologie",
-                    image: "/services/cardiology.png"
+                    image: "/services/cardiology.jpg"
                 },
                 {
                     title: "Internal Medicine",
@@ -324,7 +324,7 @@ export const translations = {
                 {
                     title: "Cardiology",
                     description: "ECG, heart ultrasound, and comprehensive heart diagnostics for your safety.",
-                    image: "/services/cardiology.png",
+                    image: "/services/cardiology.jpg",
                     link: "/leistungen/kardiologie"
                 },
                 {
@@ -347,7 +347,7 @@ export const translations = {
                 kardiologie: {
                     title: "Cardiology",
                     subtitle: "Heart & Circulatory Diagnostics",
-                    image: "/services/cardiology.png",
+                    image: "/services/cardiology.jpg",
                     content: [
                         "As a specialist in internal medicine and cardiology, I accompany you sensitively and competently in all questions regarding heart and vascular diseases.",
                         "Clarification of heart complaints (e.g. chest pain, shortness of breath, palpitation), Care for heart failure and rhythm disturbances, Cardiological preventive examinations.",
