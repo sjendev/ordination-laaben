@@ -25,6 +25,13 @@ export default function Header() {
 
             <nav className="hidden lg:flex flex-1 justify-center items-center gap-10 text-[11px] uppercase tracking-widest font-medium h-full">
                 <Link
+                    href="/"
+                    className="hover:text-primary transition-colors"
+                >
+                    {t.nav.home}
+                </Link>
+
+                <Link
                     href="/ueber-mich"
                     className="hover:text-primary transition-colors"
                 >
@@ -93,6 +100,8 @@ export default function Header() {
             {isMenuOpen && (
                 <div className="absolute top-full left-0 w-full bg-white/95 backdrop-blur-md border-t border-slate-100 p-8 flex flex-col gap-8 lg:hidden animate-in fade-in slide-in-from-top-2 overflow-y-auto max-h-[85vh]">
                     <nav className="flex flex-col gap-6 text-xs uppercase tracking-widest font-medium text-center">
+                        <Link href="/" onClick={() => setIsMenuOpen(false)}>{t.nav.home}</Link>
+
                         <Link href="/ueber-mich" onClick={() => setIsMenuOpen(false)}>{t.nav.about}</Link>
 
                         <Link href="/leistungen" onClick={() => setIsMenuOpen(false)}>{t.nav.services}</Link>

@@ -1,59 +1,39 @@
 "use client";
 
-import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function ServiceTeaser() {
     const { t } = useLanguage();
 
-    const services = [
-        {
-            ...t.home.services[0],
-            icon: "favorite",
-            link: "/leistungen/kardiologie",
-        },
-        {
-            ...t.home.services[1],
-            icon: "verified_user",
-            link: "/leistungen/diagnostik",
-        },
-    ];
-
     return (
-        <section className="py-32 px-8">
-            <div className="max-w-6xl mx-auto text-center mb-20">
-                <h2 className="font-display text-3xl md:text-4xl">{t.home.servicesHeadline}</h2>
-                <div className="w-12 h-[1px] bg-primary/40 mx-auto mt-6"></div>
-            </div>
+        <section className="py-32 px-8 bg-black/[0.01]">
+            <div className="max-w-6xl mx-auto">
+                <div className="text-center mb-20">
+                    <span className="text-primary text-xs uppercase tracking-[0.4em] mb-4 block">
+                        {t.home.schwerpunkteLabel}
+                    </span>
+                    <h2 className="font-display text-3xl md:text-4xl">{t.home.schwerpunkteHeadline}</h2>
+                    <div className="w-12 h-[1px] bg-primary/40 mx-auto mt-6"></div>
+                </div>
 
-            <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-                {services.map((service: any, index: number) => (
-                    <div key={index} className="group bg-black/[0.02] border border-black/[0.05] hover:border-primary/20 hover:bg-white/40 transition-all flex flex-col items-center text-center backdrop-blur-sm overflow-hidden">
-                        <div className="w-full aspect-video overflow-hidden relative">
-                            <img
-                                src={service.image}
-                                alt={service.title}
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100"
-                            />
-                            <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors"></div>
-                            <span className="absolute top-4 right-4 material-symbols-outlined text-2xl text-white/80 font-thin bg-primary/20 backdrop-blur-md p-2 rounded-full">
-                                {service.icon}
-                            </span>
-                        </div>
-                        <div className="p-10 flex flex-col items-center">
-                            <h3 className="font-display text-xl mb-4">{service.title}</h3>
-                            <p className="text-sm text-slate-500 font-light leading-relaxed mb-8">
-                                {service.description}
-                            </p>
-                            <Link
-                                href={service.link}
-                                className="text-[10px] uppercase tracking-widest font-bold border-b border-primary/10 pb-1 group-hover:border-primary transition-colors"
-                            >
-                                {t.cookie.details}
-                            </Link>
-                        </div>
+                <div className="max-w-4xl mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8 mb-20">
+                        {t.home.schwerpunkteItems.map((item: string, index: number) => (
+                            <div key={index} className="flex items-start gap-4 group">
+                                <span className="text-primary mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
+                                <span className="text-slate-600 font-light leading-relaxed group-hover:text-black transition-colors duration-300">
+                                    {item}
+                                </span>
+                            </div>
+                        ))}
                     </div>
-                ))}
+
+                    <div className="text-center border-t border-black/[0.05] pt-12">
+                        <p className="text-slate-500 font-light italic leading-relaxed text-lg max-w-2xl mx-auto">
+                            {t.home.schwerpunkteFooter}
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     );

@@ -12,7 +12,7 @@ export default function AboutPage() {
                 <section className="flex flex-col lg:flex-row gap-20 items-start mb-40">
                     <div className="w-full lg:w-5/12 aspect-[4/5] bg-slate-100 rounded-sm overflow-hidden relative group shadow-2xl">
                         <img
-                            src="/about-portrait.jpg"
+                            src="/about-portrait-v2.jpg"
                             alt={t.about.title}
                             className="w-full h-full object-cover object-[center_25%] grayscale-[0.1] group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
                         />

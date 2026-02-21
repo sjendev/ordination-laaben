@@ -87,7 +87,7 @@ export const translations = {
             hours: "Öffnungszeiten",
             hoursValue: "Termine nach Vereinbarung",
             secondPracticeLabel: "Zweitordination Wien",
-            secondPracticeValue: "https://www.ordination-josefstadt.at/",
+            secondPracticeValue: "Ordination Josefstadt",
         },
         home: {
             welcome: "Willkommen",
@@ -100,6 +100,18 @@ export const translations = {
             wahlarztText2: "Als Wahlärztin kann ich Ihnen die Zeit widmen, die Sie brauchen. Ob ausführliches Anamnesegespräch oder detaillierte Aufklärung, ich bin für Sie da. In meiner Praxis setze ich auf eine ruhige Atmosphäre und ausführliche Beratung.",
             wahlarztCta: "Mehr erfahren",
             locationHeadline: "Anfahrt",
+            schwerpunkteLabel: "Leistungsspektrum",
+            schwerpunkteHeadline: "Schwerpunkte",
+            schwerpunkteItems: [
+                "Abklärung von Herzbeschwerden (z. B. Brustschmerz, Luftnot, Herzstolpern)",
+                "Bluthochdruckdiagnostik und -therapie",
+                "Betreuung bei Herzschwäche und Rhythmusstörungen",
+                "Kardiologische Vorsorgeuntersuchungen",
+                "Internistische Ganzkörperdiagnostik",
+                "Risikoeinschätzung & Prävention",
+                "Nachsorge nach Spitalsaufenthalten"
+            ],
+            schwerpunkteFooter: "Modernste Untersuchungsmethoden und eine sorgfältige Befundinterpretation sind dabei selbstverständlich.",
             services: [
                 {
                     title: "Kardiologie",
@@ -156,7 +168,49 @@ export const translations = {
                         { name: "COVID Nachsorge", desc: "COVID Nachsorge." }
                     ]
                 }
-            }
+            },
+            allServices: [
+                {
+                    title: "Echokardiographie (Herzultraschall)",
+                    description: "Die Echokardiographie ist eine schonende und schmerzfreie Ultraschalluntersuchung des Herzens. Dabei werden Herzmuskel, Herzklappen und die Pumpfunktion in Echtzeit dargestellt. So lassen sich Durchblutungsstörungen, Klappenerkrankungen, Herzschwäche oder Strukturveränderungen frühzeitig erkennen. Der Herzultraschall ist ein zentrales Diagnoseverfahren in der Kardiologie – völlig strahlenfrei und jederzeit wiederholbar.",
+                    image: "/services/cardiology.jpg"
+                },
+                {
+                    title: "EKG (Elektrokardiogramm)",
+                    description: "Das EKG ist eine einfache und schmerzfreie Untersuchung, bei der die elektrischen Aktivitäten des Herzens gemessen werden. Über kleine Elektroden auf der Haut können Herzrhythmus, Herzfrequenz und mögliche Durchblutungsstörungen beurteilt werden. So lassen sich Herzrhythmusstörungen, Herzinfarkte oder andere Veränderungen rasch und zuverlässig erkennen.",
+                    image: "/services/cardiology.png"
+                },
+                {
+                    title: "Langzeit-EKG",
+                    description: "Beim Langzeit-EKG wird die elektrische Aktivität des Herzens über 24 bis 72 Stunden mittels eines kleinen, tragbaren Geräts aufgezeichnet. So können Herzrhythmus und mögliche Unregelmäßigkeiten im Alltag erfasst werden – auch dann, wenn Beschwerden nur zeitweise auftreten. Die Auswertung liefert wertvolle Hinweise auf Herzrhythmusstörungen, Herzrasen oder Pausen im Herzschlag.",
+                    image: "/services/consultation.png"
+                },
+                {
+                    title: "Carotis-Ultraschall (Halsschlagader-Sonographie)",
+                    description: "Der Carotis-Ultraschall ist eine schmerzfreie Untersuchung der Halsschlagadern mittels Ultraschall. Dabei können Ablagerungen (Plaques), Gefäßverengungen oder Durchblutungsstörungen frühzeitig erkannt werden. Diese Untersuchung ist besonders wichtig bei Bluthochdruck, Diabetes oder erhöhten Blutfetten.",
+                    image: "/services/vascular.png"
+                },
+                {
+                    title: "Langzeit-Blutdruckmessung",
+                    description: "Bei der Langzeit-Blutdruckmessung wird Ihr Blutdruck über 24 Stunden regelmäßig aufgezeichnet. So lassen sich natürliche Schwankungen im Tages- und Nachtverlauf erfassen und ein möglichst genaues Bild Ihrer Blutdrucksituation gewinnen. Die Untersuchung ist unkompliziert und hilft, Bluthochdruck sicher zu diagnostizieren.",
+                    image: "/services/diagnostics.png"
+                },
+                {
+                    title: "Spirometrie (Lungenfunktionstest)",
+                    description: "Die Spirometrie ist ein Lungenfunktionstest, mit dem gemessen wird, wie viel Luft eine Person ein- und ausatmen kann und wie schnell das geschieht. Sie wird häufig eingesetzt, um Atemwegserkrankungen wie Asthma oder COPD zu erkennen, zu beurteilen oder zu kontrollieren.",
+                    image: "/services/spirometry.png"
+                },
+                {
+                    title: "OP- Freigaben",
+                    description: "Umfassende internistische Untersuchung und Risikoeinschätzung vor geplanten operativen Eingriffen zur Sicherstellung Ihrer bestmöglichen Versorgung während der Operation.",
+                    image: "/services/diagnostics.png"
+                },
+                {
+                    title: "COVID Nachsorge",
+                    description: "Spezialisierte kardiologische und internistische Nachsorge nach einer COVID-19 Infektion zur Abklärung von Spätfolgen wie Kurzatmigkeit, Herzrasen oder verminderter Leistungsfähigkeit.",
+                    image: "/services/covid-aftercare.png"
+                }
+            ]
         },
         wahlarzt: {
             label: "Information",
@@ -307,7 +361,7 @@ export const translations = {
             hours: "Hours",
             hoursValue: "By appointment",
             secondPracticeLabel: "Private Practice Vienna",
-            secondPracticeValue: "https://www.ordination-josefstadt.at/",
+            secondPracticeValue: "Ordination Josefstadt",
         },
         home: {
             welcome: "Welcome",
@@ -320,6 +374,18 @@ export const translations = {
             wahlarztText2: "As a private physician, I can dedicate the time you need. Whether it's an extensive anamnesis talk or detailed explanation, I am here for you. In my practice, I rely on a calm atmosphere and detailed advice.",
             wahlarztCta: "Learn more",
             locationHeadline: "Location",
+            schwerpunkteLabel: "Medical Services",
+            schwerpunkteHeadline: "Focus Areas",
+            schwerpunkteItems: [
+                "Assessment of heart complaints (e.g. chest pain, shortness of breath, palpitations)",
+                "High blood pressure diagnostics and therapy",
+                "Care for heart failure and rhythm disturbances",
+                "Cardiological preventive examinations",
+                "Internal full-body diagnostics",
+                "Risk assessment & prevention",
+                "Aftercare after hospital stays"
+            ],
+            schwerpunkteFooter: "State-of-the-art examination methods and careful interpretation of findings are a matter of course.",
             services: [
                 {
                     title: "Cardiology",
@@ -376,7 +442,49 @@ export const translations = {
                         { name: "COVID Aftercare", desc: "COVID Aftercare." }
                     ]
                 }
-            }
+            },
+            allServices: [
+                {
+                    title: "Echocardiography (Heart Ultrasound)",
+                    description: "Echocardiography is a gentle and painless ultrasound examination of the heart. Heart muscle, heart valves, and pumping function are displayed in real-time, allowing detection of circulatory disorders, valve diseases, or heart failure. Heart ultrasound is a central diagnostic procedure – completely radiation-free and repeatable.",
+                    image: "/services/cardiology.jpg"
+                },
+                {
+                    title: "ECG (Electrocardiogram)",
+                    description: "An ECG is a simple and painless test measuring the heart's electrical activity. Small electrodes on the skin assess heart rhythm, frequency, and possible circulatory issues, enabling quick and reliable detection of arrhythmias, heart attacks, or other changes.",
+                    image: "/services/cardiology.png"
+                },
+                {
+                    title: "Long-term ECG",
+                    description: "The heart's electrical activity is recorded over 24 to 72 hours using a small, portable device. This detects heart rhythm and irregularities in everyday life, providing valuable clues to arrhythmias, racing hearts, or pauses in heartbeat.",
+                    image: "/services/consultation.png"
+                },
+                {
+                    title: "Carotid Ultrasound (Carotid Sonography)",
+                    description: "A painless ultrasonic examination of the carotid arteries to detect deposits (plaques), vascular constrictions, or circulatory disorders early. Especially important for high blood pressure, diabetes, or elevated blood lipids.",
+                    image: "/services/vascular.png"
+                },
+                {
+                    title: "Long-term blood pressure measurement",
+                    description: "Blood pressure is regularly recorded over 24 hours to capture natural fluctuations during the day and night. This provides an accurate picture of your situation and helps to reliably diagnose high blood pressure.",
+                    image: "/services/diagnostics.png"
+                },
+                {
+                    title: "Spirometry (Lung function test)",
+                    description: "A test measuring how much air a person can inhale and exhale and how quickly this occurs. It is used to detect, assess, or control respiratory diseases like asthma or COPD.",
+                    image: "/services/spirometry.png"
+                },
+                {
+                    title: "OP Clearances",
+                    description: "Comprehensive internal examination and risk assessment before planned operative procedures to ensure your best possible care during surgery.",
+                    image: "/services/diagnostics.png"
+                },
+                {
+                    title: "COVID Aftercare",
+                    description: "Specialized cardiological and internal follow-up care after a COVID-19 infection to clarify long-term effects such as shortness of breath, racing heart, or reduced performance.",
+                    image: "/services/covid-aftercare.png"
+                }
+            ]
         },
         wahlarzt: {
             label: "Information",

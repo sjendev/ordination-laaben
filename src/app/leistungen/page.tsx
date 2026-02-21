@@ -6,21 +6,6 @@ import { useLanguage } from "@/context/LanguageContext";
 export default function ServicesPage() {
     const { t } = useLanguage();
 
-    const serviceCategories = [
-        {
-            title: t.nav.subServices[0].title,
-            description: t.services.items.kardiologie.content[0],
-            image: "/services/cardiology.png",
-            slug: "kardiologie"
-        },
-        {
-            title: t.nav.subServices[1].title,
-            description: t.services.items.diagnostik.content[0],
-            image: "/services/diagnostics.png",
-            slug: "diagnostik"
-        }
-    ];
-
     return (
         <main className="pt-48 pb-32 px-8 bg-transparent">
             <div className="max-w-6xl mx-auto">
@@ -35,33 +20,28 @@ export default function ServicesPage() {
                     <div className="w-12 h-[1px] bg-primary/30 mx-auto mt-12"></div>
                 </header>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
-                    {serviceCategories.map((category) => (
-                        <Link
-                            key={category.slug}
-                            href={`/leistungen/${category.slug}`}
-                            className="group flex flex-col bg-white overflow-hidden shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] transition-all duration-700 h-full"
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                    {t.services.allServices.map((service: any, index: number) => (
+                        <div
+                            key={index}
+                            className="group flex flex-col bg-white overflow-hidden shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_60px_-10px_rgba(0,0,0,0.08)] transition-all duration-700 h-full border border-black/[0.02]"
                         >
-                            <div className="aspect-[16/10] overflow-hidden bg-slate-100">
+                            <div className="aspect-[16/10] overflow-hidden bg-slate-50">
                                 <img
-                                    src={category.image}
-                                    alt={category.title}
-                                    className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-[2000ms] group-hover:scale-105"
+                                    src={service.image}
+                                    alt={service.title}
+                                    className="w-full h-full object-cover grayscale-[0.1] group-hover:grayscale-0 transition-all duration-[2000ms] group-hover:scale-105"
                                 />
                             </div>
                             <div className="p-10 md:p-12 flex flex-col flex-grow">
-                                <h2 className="font-display text-2xl md:text-3xl mb-4 tracking-[0.05em] text-slate-400 group-hover:text-primary transition-colors">
-                                    {category.title}
+                                <h2 className="font-display text-2xl mb-4 text-slate-900">
+                                    {service.title}
                                 </h2>
-                                <p className="text-slate-500 font-light leading-relaxed mb-10 text-base line-clamp-4 flex-grow">
-                                    {category.description}
+                                <p className="text-slate-500 font-light leading-relaxed text-base flex-grow">
+                                    {service.description}
                                 </p>
-                                <div className="flex items-center gap-3 text-primary text-[9px] uppercase tracking-[0.3em] font-bold mt-auto group-hover:gap-4 transition-all">
-                                    {t.services.cta}
-                                    <span className="material-symbols-outlined text-[12px]">arrow_forward</span>
-                                </div>
                             </div>
-                        </Link>
+                        </div>
                     ))}
                 </div>
             </div>

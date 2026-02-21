@@ -14,7 +14,7 @@ export default function Hero() {
                     <span className="text-primary text-xs uppercase tracking-[0.4em] mb-4 block">
                         {t.hero.welcome}
                     </span>
-                    <h1 className="font-display text-4xl md:text-5xl lg:text-7xl leading-[1.1] mb-8 font-medium">
+                    <h1 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-8 font-medium">
                         {t.hero.headline}
                     </h1>
                     <p className="text-slate-600 font-light leading-relaxed mb-10 text-lg md:text-xl max-w-xl">

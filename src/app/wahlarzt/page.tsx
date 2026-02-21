@@ -9,7 +9,7 @@ export default function WahlarztPage() {
 
     return (
         <main className="pt-48 pb-32 px-8">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-6xl mx-auto">
                 <header className="mb-24 text-center md:text-left">
                     <span className="text-primary text-[10px] uppercase tracking-[0.3em] font-semibold mb-2 block">
                         {t.wahlarzt.label}
@@ -53,7 +53,7 @@ export default function WahlarztPage() {
 
                 <section className="mb-32">
                     <h2 className="font-display text-3xl mb-12 text-center">{t.wahlarzt.benefitsTitle}</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {t.wahlarzt.benefits.map((v: any, i: number) => (
                             <div key={i} className="text-center p-10 border border-black/[0.03] hover:border-primary/20 transition-all bg-white/[0.4] hover:bg-white active:scale-[0.98]">
                                 <h3 className="font-display text-xl mb-4">{v.title}</h3>
