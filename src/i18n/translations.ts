@@ -203,12 +203,12 @@ export const translations = {
                 {
                     title: "OP- Freigaben",
                     description: "Umfassende internistische Untersuchung und Risikoeinschätzung vor geplanten operativen Eingriffen zur Sicherstellung Ihrer bestmöglichen Versorgung während der Operation.",
-                    image: "/services/diagnostics.png"
+                    image: "/services/covid-aftercare.png"
                 },
                 {
                     title: "COVID Nachsorge",
                     description: "Spezialisierte kardiologische und internistische Nachsorge nach einer COVID-19 Infektion zur Abklärung von Spätfolgen wie Kurzatmigkeit, Herzrasen oder verminderter Leistungsfähigkeit.",
-                    image: "/services/covid-aftercare.png"
+                    image: "/services/diagnostics.png"
                 }
             ]
         },
@@ -477,12 +477,12 @@ export const translations = {
                 {
                     title: "OP Clearances",
                     description: "Comprehensive internal examination and risk assessment before planned operative procedures to ensure your best possible care during surgery.",
-                    image: "/services/diagnostics.png"
+                    image: "/services/covid-aftercare.png"
                 },
                 {
                     title: "COVID Aftercare",
                     description: "Specialized cardiological and internal follow-up care after a COVID-19 infection to clarify long-term effects such as shortness of breath, racing heart, or reduced performance.",
-                    image: "/services/covid-aftercare.png"
+                    image: "/services/diagnostics.png"
                 }
             ]
         },
