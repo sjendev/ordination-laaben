@@ -183,7 +183,7 @@ export const translations = {
                 {
                     title: "Langzeit-EKG",
                     description: "Beim Langzeit-EKG wird die elektrische Aktivität des Herzens über 24 bis 72 Stunden mittels eines kleinen, tragbaren Geräts aufgezeichnet. So können Herzrhythmus und mögliche Unregelmäßigkeiten im Alltag erfasst werden – auch dann, wenn Beschwerden nur zeitweise auftreten. Die Auswertung liefert wertvolle Hinweise auf Herzrhythmusstörungen, Herzrasen oder Pausen im Herzschlag.",
-                    image: "/services/consultation.png"
+                    image: "/services/long-term-ecg.png"
                 },
                 {
                     title: "Carotis-Ultraschall (Halsschlagader-Sonographie)",
@@ -457,7 +457,7 @@ export const translations = {
                 {
                     title: "Long-term ECG",
                     description: "The heart's electrical activity is recorded over 24 to 72 hours using a small, portable device. This detects heart rhythm and irregularities in everyday life, providing valuable clues to arrhythmias, racing hearts, or pauses in heartbeat.",
-                    image: "/services/consultation.png"
+                    image: "/services/long-term-ecg.png"
                 },
                 {
                     title: "Carotid Ultrasound (Carotid Sonography)",
