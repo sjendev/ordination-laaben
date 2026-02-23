@@ -178,7 +178,7 @@ export const translations = {
                 {
                     title: "EKG (Elektrokardiogramm)",
                     description: "Das EKG ist eine einfache und schmerzfreie Untersuchung, bei der die elektrischen Aktivitäten des Herzens gemessen werden. Über kleine Elektroden auf der Haut können Herzrhythmus, Herzfrequenz und mögliche Durchblutungsstörungen beurteilt werden. So lassen sich Herzrhythmusstörungen, Herzinfarkte oder andere Veränderungen rasch und zuverlässig erkennen.",
-                    image: "/services/cardiology.png"
+                    image: "/services/ekg.jpeg"
                 },
                 {
                     title: "Langzeit-EKG",
@@ -188,12 +188,12 @@ export const translations = {
                 {
                     title: "Carotis-Ultraschall (Halsschlagader-Sonographie)",
                     description: "Der Carotis-Ultraschall ist eine schmerzfreie Untersuchung der Halsschlagadern mittels Ultraschall. Dabei können Ablagerungen (Plaques), Gefäßverengungen oder Durchblutungsstörungen frühzeitig erkannt werden. Diese Untersuchung ist besonders wichtig bei Bluthochdruck, Diabetes oder erhöhten Blutfetten.",
-                    image: "/services/vascular.png"
+                    image: "/services/carotis-ultraschall.jpeg"
                 },
                 {
                     title: "Langzeit-Blutdruckmessung",
                     description: "Bei der Langzeit-Blutdruckmessung wird Ihr Blutdruck über 24 Stunden regelmäßig aufgezeichnet. So lassen sich natürliche Schwankungen im Tages- und Nachtverlauf erfassen und ein möglichst genaues Bild Ihrer Blutdrucksituation gewinnen. Die Untersuchung ist unkompliziert und hilft, Bluthochdruck sicher zu diagnostizieren.",
-                    image: "/services/diagnostics.png"
+                    image: "/services/langzeit-blutdruckmessung.jpeg"
                 },
                 {
                     title: "Spirometrie (Lungenfunktionstest)",
@@ -452,7 +452,7 @@ export const translations = {
                 {
                     title: "ECG (Electrocardiogram)",
                     description: "An ECG is a simple and painless test measuring the heart's electrical activity. Small electrodes on the skin assess heart rhythm, frequency, and possible circulatory issues, enabling quick and reliable detection of arrhythmias, heart attacks, or other changes.",
-                    image: "/services/cardiology.png"
+                    image: "/services/ekg.jpeg"
                 },
                 {
                     title: "Long-term ECG",
@@ -462,12 +462,12 @@ export const translations = {
                 {
                     title: "Carotid Ultrasound (Carotid Sonography)",
                     description: "A painless ultrasonic examination of the carotid arteries to detect deposits (plaques), vascular constrictions, or circulatory disorders early. Especially important for high blood pressure, diabetes, or elevated blood lipids.",
-                    image: "/services/vascular.png"
+                    image: "/services/carotis-ultraschall.jpeg"
                 },
                 {
                     title: "Long-term blood pressure measurement",
                     description: "Blood pressure is regularly recorded over 24 hours to capture natural fluctuations during the day and night. This provides an accurate picture of your situation and helps to reliably diagnose high blood pressure.",
-                    image: "/services/diagnostics.png"
+                    image: "/services/langzeit-blutdruckmessung.jpeg"
                 },
                 {
                     title: "Spirometry (Lung function test)",
