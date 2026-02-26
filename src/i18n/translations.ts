@@ -88,6 +88,7 @@ export const translations = {
             hoursValue: "Termine nach Vereinbarung",
             secondPracticeLabel: "Zweitordination Wien",
             secondPracticeValue: "Ordination Josefstadt",
+            secondPracticeNote: "Sie finden mich auch hier:",
         },
         home: {
             welcome: "Willkommen",
@@ -362,6 +363,7 @@ export const translations = {
             hoursValue: "By appointment",
             secondPracticeLabel: "Private Practice Vienna",
             secondPracticeValue: "Ordination Josefstadt",
+            secondPracticeNote: "you can also find me here:",
         },
         home: {
             welcome: "Welcome",

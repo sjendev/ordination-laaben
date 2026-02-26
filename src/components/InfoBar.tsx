@@ -27,6 +27,7 @@ export default function InfoBar() {
             label: t.infobar.secondPracticeLabel,
             value: t.infobar.secondPracticeValue,
             link: "https://www.ordination-josefstadt.at/",
+            note: t.infobar.secondPracticeNote,
         },
     ];
 
@@ -39,6 +40,11 @@ export default function InfoBar() {
                             <span className="material-symbols-outlined text-lg">{item.icon}</span>
                         </div>
                         <div className="flex flex-col justify-center">
+                            {(item as any).note && (
+                                <p className="text-[9px] uppercase tracking-widest text-primary/60 font-medium mb-0.5">
+                                    {(item as any).note}
+                                </p>
+                            )}
                             {item.label && !item.link && (
                                 <p className="text-[9px] uppercase tracking-widest text-slate-400 font-medium">
                                     {item.label}
