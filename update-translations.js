@@ -24,7 +24,7 @@ const deReplacement = `            items: {
                     image: "/services/diagnostics.png",
                     content: [
                         "In meiner Praxis setzen wir auf eine ruhige Atmosphäre und ausführliche Beratung. So können wir gemeinsam die beste Lösung für Ihre Gesundheit finden.",
-                        "Bluthochdruckdiagnostik und -therapie. Internistische Ganzkörperdiagnostik. Risikoeinschätzung & Prävention. Nachsorge nach Spitalsaufenthalten.",
+                        "Bluthochdruckdiagnostik und -therapie. Risikoeinschätzung & Prävention. Nachsorge nach Spitalsaufenthalten.",
                         "Modernste Untersuchungsmethoden und eine sorgfältige Befundinterpretation sind dabei selbstverständlich."
                     ],
                     details: [
@@ -59,7 +59,7 @@ const enReplacement = `            items: {
                     image: "/services/diagnostics.png",
                     content: [
                         "In my practice, we focus on a calm atmosphere and extensive consultation. Thus, we can together find the best solution for your health.",
-                        "High blood pressure diagnostics and therapy. Internal full-body diagnostics. Risk assessment & prevention. Aftercare following hospital stays.",
+                        "High blood pressure diagnostics and therapy. Risk assessment & prevention. Aftercare following hospital stays.",
                         "State-of-the-art examination methods and careful interpretation of findings are a matter of course."
                     ],
                     details: [

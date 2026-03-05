@@ -53,7 +53,7 @@ export default function Home() {
           </div>
           <div className="aspect-square bg-slate-200 rounded-sm overflow-hidden shadow-xl border border-black/[0.03]">
             <img
-              src="/hero-consultation.jpg"
+              src="/services/covid-aftercare.png"
               alt="Ordination Dr. Sang"
               className="w-full h-full object-cover transition-transform duration-[2000ms] hover:scale-110"
             />

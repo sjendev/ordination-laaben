@@ -96,9 +96,9 @@ export const translations = {
             welcomeText: "Als Fachärztin für Innere Medizin und Kardiologie begleite ich Sie einfühlsam und kompetent in allen Fragen rund um Herz- und Gefäßerkrankungen sowie internistische Gesundheitsvorsorge. Mein Ziel ist es, Sie medizinisch umfassend zu betreuen – mit genügend Zeit für Ihre Anliegen, in ruhiger Atmosphäre und auf aktuellem medizinischem Wissensstand.",
             servicesHeadline: "Meine Leistungen",
             wahlarztLabel: "Ihre Herzgesundheit in besten Händen",
-            wahlarztHeadline: "Qualität braucht Zeit.",
+            wahlarztHeadline: "Medizin mit Zeit und Sorgfalt.",
             wahlarztText1: "In meiner Wahlarztordination steht der Mensch im Mittelpunkt. Zeit ist ein wesentlicher Faktor für Qualität – diese nehme mir für jedes Gespräch und jede Untersuchung. Sie stehen im Mittelpunkt, ohne Hektik, ohne lange Wartezeiten.",
-            wahlarztText2: "Als Wahlärztin kann ich Ihnen die Zeit widmen, die Sie brauchen. Ob ausführliches Anamnesegespräch oder detaillierte Aufklärung, ich bin für Sie da. In meiner Praxis setze ich auf eine ruhige Atmosphäre und ausführliche Beratung.",
+            wahlarztText2: "Als Wahlärztin kann ich Ihnen die Zeit widmen, die Sie brauchen. Ob ausführliches Anamnesegespräch oder detaillierte Aufklärung, ich bin für Sie da.",
             wahlarztCta: "Mehr erfahren",
             locationHeadline: "Anfahrt",
             schwerpunkteLabel: "Leistungsspektrum",
@@ -108,7 +108,6 @@ export const translations = {
                 "Bluthochdruckdiagnostik und -therapie",
                 "Betreuung bei Herzschwäche und Rhythmusstörungen",
                 "Kardiologische Vorsorgeuntersuchungen",
-                "Internistische Ganzkörperdiagnostik",
                 "Risikoeinschätzung & Prävention",
                 "Nachsorge nach Spitalsaufenthalten"
             ],
@@ -159,7 +158,7 @@ export const translations = {
                     image: "/services/diagnostics.png",
                     content: [
                         "In meiner Praxis setzen wir auf eine ruhige Atmosphäre und ausführliche Beratung. So können wir gemeinsam die beste Lösung für Ihre Gesundheit finden.",
-                        "Bluthochdruckdiagnostik und -therapie. Internistische Ganzkörperdiagnostik. Risikoeinschätzung & Prävention. Nachsorge nach Spitalsaufenthalten.",
+                        "Bluthochdruckdiagnostik und -therapie. Risikoeinschätzung & Prävention. Nachsorge nach Spitalsaufenthalten.",
                         "Modernste Untersuchungsmethoden und eine sorgfältige Befundinterpretation sind dabei selbstverständlich."
                     ],
                     details: [
@@ -174,7 +173,7 @@ export const translations = {
                 {
                     title: "Echokardiographie (Herzultraschall)",
                     description: "Die Echokardiographie ist eine schonende und schmerzfreie Ultraschalluntersuchung des Herzens. Dabei werden Herzmuskel, Herzklappen und die Pumpfunktion in Echtzeit dargestellt. So lassen sich Durchblutungsstörungen, Klappenerkrankungen, Herzschwäche oder Strukturveränderungen frühzeitig erkennen. Der Herzultraschall ist ein zentrales Diagnoseverfahren in der Kardiologie – völlig strahlenfrei und jederzeit wiederholbar.",
-                    image: "/services/cardiology.jpg"
+                    image: "/about-ultrasound.jpg"
                 },
                 {
                     title: "EKG (Elektrokardiogramm)",
@@ -216,7 +215,7 @@ export const translations = {
         wahlarzt: {
             label: "Information",
             title: "Ihre Vorteile in einer Wahlarztordination",
-            quote: '"In meiner Wahlarztordination steht der Mensch im Mittelpunkt. Qualität braucht Zeit. Diese nehme ich mir für jedes Gespräch und jede Untersuchung."',
+            quote: '"In meiner Wahlarztordination steht der Mensch im Mittelpunkt. Medizin mit Zeit und Sorgfalt. Diese nehme ich mir für jedes Gespräch und jede Untersuchung."',
             howTitle: "Wie funktioniert die Abrechnung?",
             howText: "Als Wahlarztordination verrechne ich direkt mit Ihnen. Es besteht die Möglichkeit der Barzahlung oder mit Bankomat-Karte. Ein Teil der Kosten wird – abhängig von Ihrer Krankenkasse – rückerstattet.",
             reimbursementTitle: "Kostenerstattung",
@@ -371,9 +370,9 @@ export const translations = {
             welcomeText: "As a specialist in internal medicine and cardiology, I accompany you sensitively and competently in all questions regarding heart and vascular diseases as well as internal medical health prevention. My goal is to provide you with comprehensive medical care – with sufficient time for your concerns, in a calm atmosphere and on the current state of medical knowledge.",
             servicesHeadline: "My Services",
             wahlarztLabel: "Your heart health in the best hands",
-            wahlarztHeadline: "Quality needs time.",
+            wahlarztHeadline: "Medicine with time and care.",
             wahlarztText1: "In my private practice, the focus is on the individual. Time is a key factor for quality – I take this time for every conversation and every examination. You are at the center, without haste, without long waiting times.",
-            wahlarztText2: "As a private physician, I can dedicate the time you need. Whether it's an extensive anamnesis talk or detailed explanation, I am here for you. In my practice, I rely on a calm atmosphere and detailed advice.",
+            wahlarztText2: "As a private physician, I can dedicate the time you need. Whether it's an extensive anamnesis talk or detailed explanation, I am here for you.",
             wahlarztCta: "Learn more",
             locationHeadline: "Location",
             schwerpunkteLabel: "Medical Services",
@@ -383,7 +382,6 @@ export const translations = {
                 "High blood pressure diagnostics and therapy",
                 "Care for heart failure and rhythm disturbances",
                 "Cardiological preventive examinations",
-                "Internal full-body diagnostics",
                 "Risk assessment & prevention",
                 "Aftercare after hospital stays"
             ],
@@ -434,7 +432,7 @@ export const translations = {
                     image: "/services/diagnostics.png",
                     content: [
                         "In my practice, we focus on a calm atmosphere and extensive consultation. Thus, we can together find the best solution for your health.",
-                        "High blood pressure diagnostics and therapy. Internal full-body diagnostics. Risk assessment & prevention. Aftercare following hospital stays.",
+                        "High blood pressure diagnostics and therapy. Risk assessment & prevention. Aftercare following hospital stays.",
                         "State-of-the-art examination methods and careful interpretation of findings are a matter of course."
                     ],
                     details: [
@@ -449,7 +447,7 @@ export const translations = {
                 {
                     title: "Echocardiography (Heart Ultrasound)",
                     description: "Echocardiography is a gentle and painless ultrasound examination of the heart. Heart muscle, heart valves, and pumping function are displayed in real-time, allowing detection of circulatory disorders, valve diseases, or heart failure. Heart ultrasound is a central diagnostic procedure – completely radiation-free and repeatable.",
-                    image: "/services/cardiology.jpg"
+                    image: "/about-ultrasound.jpg"
                 },
                 {
                     title: "ECG (Electrocardiogram)",
@@ -491,7 +489,7 @@ export const translations = {
         wahlarzt: {
             label: "Information",
             title: "Your advantages in a private practice",
-            quote: '"In my private practice, the focus is on the individual. Quality needs time. I take this time for every conversation and every examination."',
+            quote: '"In my private practice, the focus is on the individual. Medicine with time and care. I take this time for every conversation and every examination."',
             howTitle: "How does billing work?",
             howText: "As a private practice, I bill you directly. Payment can be made in cash or by debit card. A part of the costs will be reimbursed – depending on your health insurance.",
             reimbursementTitle: "Reimbursement",
