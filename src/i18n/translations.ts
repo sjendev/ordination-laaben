@@ -40,7 +40,7 @@ export const translations = {
             ],
             cvTitle: "Beruflicher Werdegang",
             cvItems: [
-                { year: "Seit 2024", text: "Selbstständige Wahlarztordination in Brand-Laaben" },
+                { year: "Seit 2026", text: "Selbstständige Wahlarztordination in Brand-Laaben" },
                 { year: "Juni 2022", text: "Gründung der Praxisgemeinschaft „Ordination Josefstadt“" },
                 { year: "Sept 2020", text: "Wahlärztliche Tätigkeit in der Gemeinschaftsordination „Kardiologie in der Josefstadt“" },
                 { year: "Zusatzfach", text: "Kardiologie: 1. Medizinische Abteilung, Klinikum Donaustadt (Prof. Stefenelli)" },
@@ -51,6 +51,7 @@ export const translations = {
                 { year: "Ausbildung", text: "Abteilung für Innere Medizin, Barmherzige Brüder Wien (Prof. Meran)" },
                 { year: "Ausbildung", text: "Abteilung für Kardiologie, Pneumologie, Internistische Intensivstation, Klinikum München Schwabing (Prof. Sack)" },
                 { year: "Ausbildung", text: "Medical Park St Hubertus Bad Wiessee, Kardiologische Rehabilitation (Dr. Hamann)" },
+                { year: "2017", text: "Promotion an der Universität Hamburg" },
                 { year: "2007", text: "Abschluss Medizinstudium in Hamburg" }
             ],
             membershipsTitle: "Mitgliedschaften",
@@ -97,7 +98,7 @@ export const translations = {
             servicesHeadline: "Meine Leistungen",
             wahlarztLabel: "Ihre Herzgesundheit in besten Händen",
             wahlarztHeadline: "Medizin mit Zeit und Sorgfalt.",
-            wahlarztText1: "In meiner Wahlarztordination steht der Mensch im Mittelpunkt. Zeit ist ein wesentlicher Faktor für Qualität – diese nehme mir für jedes Gespräch und jede Untersuchung. Sie stehen im Mittelpunkt, ohne Hektik, ohne lange Wartezeiten.",
+            wahlarztText1: "In meiner Wahlarztordination steht der Mensch im Mittelpunkt. Zeit ist ein wesentlicher Faktor für Qualität – diese nehme mir für jedes Gespräch und jede Untersuchung. Sie sind das Wichtigste, ohne Hektik, ohne lange Wartezeiten.",
             wahlarztText2: "Als Wahlärztin kann ich Ihnen die Zeit widmen, die Sie brauchen. Ob ausführliches Anamnesegespräch oder detaillierte Aufklärung, ich bin für Sie da.",
             wahlarztCta: "Mehr erfahren",
             locationHeadline: "Anfahrt",
@@ -219,7 +220,7 @@ export const translations = {
             howTitle: "Wie funktioniert die Abrechnung?",
             howText: "Als Wahlarztordination verrechne ich direkt mit Ihnen. Es besteht die Möglichkeit der Barzahlung oder mit Bankomat-Karte. Ein Teil der Kosten wird – abhängig von Ihrer Krankenkasse – rückerstattet.",
             reimbursementTitle: "Kostenerstattung",
-            reimbursementText: "Gerne unterstütze ich Sie bei der Einreichung Ihrer Honorarnote beim zuständigen Sozialversicherungsträger. In der Regel erstattet die Kasse einen Teil der Kosten zurück.",
+            reimbursementText: "Gerne unterstütze ich Sie bei der Einreichung Ihrer Honorarnote beim zuständigen Sozialversicherungsträger oder Ihrer Sonderklassenversicherung. In der Regel erstattet die Kasse einen Teil der Kosten zurück.",
             processTitle: "Der Ablauf",
             processItems: [
                 "Ausführliches Anamnesegespräch & Untersuchung",
@@ -314,7 +315,7 @@ export const translations = {
             ],
             cvTitle: "Professional Career",
             cvItems: [
-                { year: "Since 2024", text: "Independent private practice in Brand-Laaben" },
+                { year: "Since 2026", text: "Independent private practice in Brand-Laaben" },
                 { year: "June 2022", text: "Foundation of the group practice „Ordination Josefstadt“" },
                 { year: "Sept 2020", text: "Private practice work in the group practice „Cardiology in Josefstadt“" },
                 { year: "Specialist", text: "Cardiology: 1st Medical Dept., Klinikum Donaustadt (Prof. Stefenelli)" },
@@ -325,6 +326,7 @@ export const translations = {
                 { year: "Training", text: "Dept. of Internal Medicine, Barmherzige Brüder Vienna (Prof. Meran)" },
                 { year: "Training", text: "Dept. of Cardiology, Pneumology, Internal Intensive Care, Klinikum München Schwabing (Prof. Sack)" },
                 { year: "Training", text: "Medical Park St Hubertus Bad Wiessee, Cardiological Rehabilitation (Dr. Hamann)" },
+                { year: "2017", text: "PhD (Promotion) at the University of Hamburg" },
                 { year: "2007", text: "MD Degree, University of Hamburg" }
             ],
             membershipsTitle: "Memberships",
@@ -371,7 +373,7 @@ export const translations = {
             servicesHeadline: "My Services",
             wahlarztLabel: "Your heart health in the best hands",
             wahlarztHeadline: "Medicine with time and care.",
-            wahlarztText1: "In my private practice, the focus is on the individual. Time is a key factor for quality – I take this time for every conversation and every examination. You are at the center, without haste, without long waiting times.",
+            wahlarztText1: "In my private practice, the focus is on the individual. Time is a key factor for quality – I take this time for every conversation and every examination. You are the most important thing, without haste, without long waiting times.",
             wahlarztText2: "As a private physician, I can dedicate the time you need. Whether it's an extensive anamnesis talk or detailed explanation, I am here for you.",
             wahlarztCta: "Learn more",
             locationHeadline: "Location",
@@ -493,7 +495,7 @@ export const translations = {
             howTitle: "How does billing work?",
             howText: "As a private practice, I bill you directly. Payment can be made in cash or by debit card. A part of the costs will be reimbursed – depending on your health insurance.",
             reimbursementTitle: "Reimbursement",
-            reimbursementText: "I am happy to support you with the submission of your medical fee note to the responsible social security provider. Usually, the insurance reimburses a part of the costs.",
+            reimbursementText: "I am happy to support you with the submission of your medical fee note to the responsible social security provider or your private insurance. Usually, the insurance reimburses a part of the costs.",
             processTitle: "The Procedure",
             processItems: [
                 "Detailed anamnesis talk & examination",
